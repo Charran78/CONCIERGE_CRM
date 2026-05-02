@@ -2,7 +2,7 @@
 
 Un sistema CRM integral y de ultra-lujo diseñado específicamente para agencias de viajes y servicios de concierge premium. Combina una potente gestión de clientes con inteligencia artificial y portales inmersivos de cara al cliente (inspirado en la estética visual de *Black Tomato*).
 
-![The Singular Choice](public/Emblema-TSC.png)
+![The Singular Choice](public/photo-9.png)
 
 ## 💎 Características Principales
 
