@@ -1,179 +1,65 @@
-<div align="center">
+# The Singular Choice — Luxury Concierge CRM
 
-# 🚀 TOTAL PRO Lead Converter
+Un sistema CRM integral y de ultra-lujo diseñado específicamente para agencias de viajes y servicios de concierge premium. Combina una potente gestión de clientes con inteligencia artificial y portales inmersivos de cara al cliente (inspirado en la estética visual de *Black Tomato*).
 
-![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js&logoColor=white)
-![React](https://img.shields.io/badge/React-18-blue?logo=react)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-3-38B2AC?logo=tailwind-css&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-PostgreSQL-3FCF8E?logo=supabase&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)
-![AI Powered](https://img.shields.io/badge/🧠_AI_Powered-ProInsight-8A2BE2)
-![Mobile First](https://img.shields.io/badge/📱_Mobile_First-Responsive-FFA500)
-![CRM](https://img.shields.io/badge/🏆_CRM-Evolutivo-4F46E5)
-![License](https://img.shields.io/badge/License-Proprietary-red)
+![The Singular Choice](public/Emblema-TSC.png)
 
-<br />
+## 💎 Características Principales
 
-<img src="./DOCS/LOGOS/lead_converter.png" alt="TOTAL PRO Lead Converter" width="600" style="max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+### 1. CRM Operativo de Alta Gama
+- **Gestión de Leads Avanzada:** Control del ciclo de vida del cliente (Frío, Potencial, Activo) con métricas de conversión en tiempo real.
+- **Memoria de Estilo de Vida:** Almacenamiento estructurado de preferencias críticas (`lifestyle_prefs`): alergias, temperatura de habitación preferida, tipo de almohada, marcas favoritas, etc.
+- **Tablero de Control Multicanal:** Historial unificado de correos electrónicos, llamadas, notas de IA y reuniones agendadas.
 
-</div>
+### 2. Portal VIP Inmersivo (Client-Facing)
+- **Estética Ultra Premium:** Diseño oscuro, tipografía Serif elegante y acentos dorados/crema para una experiencia de usuario que grita lujo.
+- **Itinerario Interactivo (Roadmap):** Timeline desplegable que integra imágenes de alta resolución de los destinos y detalles logísticos confidenciales.
+- **Motor de Emociones (Mood Narrative):** Una visión narrativa generada por inteligencia artificial que se inyecta en el portal para "vender el sentimiento" del viaje antes de que comience.
+- **Bóveda Digital:** Gestor seguro de archivos donde el concierge puede arrastrar PDFs y billetes para que el cliente los descargue de manera cifrada.
 
-**TOTAL PRO Lead Converter** es una plataforma de gestión de ventas de próxima generación que transforma la forma en que las empresas interactúan con sus clientes potenciales. A diferencia de un CRM tradicional, integra **Inteligencia Artificial Generativa (ProInsight AI)** para crear una "Memoria Evolutiva" de cada contacto y facilitar el cierre de ventas mediante **Portales de Estrategia** personalizados.
+### 3. ProInsight AI
+- **Generación de Experiencias (Groq AI):** Utiliza modelos de IA ultrarrápidos (Llama 3) para redactar propuestas inmersivas y poéticas basadas en los gustos del cliente y el "mood" deseado (silencio, aventura, romanticismo).
+- **Asesoramiento de Estrategia:** Resúmenes y análisis de sentimiento de los contactos para sugerir el próximo mejor paso comercial.
 
----
+### 4. Integraciones
+- **Supabase:** Base de datos PostgreSQL robusta, Storage para la Bóveda Digital, y Row Level Security (RLS) impenetrable.
+- **Telegram:** Notificaciones automatizadas y botón de conexión directa con el "Concierge Privado" en el Portal VIP.
+- **Stripe:** Preparado para procesamiento de pagos y cotizaciones.
 
-## 🌟 Funcionalidades Clave
+## 🚀 Tecnologías Utilizadas
 
-### 🧠 CRM Proactivo con Memoria Evolutiva
+- **Frontend:** Next.js 16 (App Router), React, Tailwind CSS, Lucide Icons.
+- **Backend & Database:** Supabase (PostgreSQL, Storage, Auth).
+- **Inteligencia Artificial:** Groq SDK (Llama 3.1).
+- **Despliegue:** Preparado para Vercel.
 
-* **Análisis Omnisciente**: La IA analiza cada nota, email y cita para actualizar un "Resumen Maestro" que evoluciona con el tiempo.
-* **Línea de Tiempo Unificada**: Visualización cronológica de emails enviados, citas de calendario e insights generados por IA.
-* **Acciones Rápidas**: Llamadas, agendamiento de citas y redacción de emails asistida por IA desde una única interfaz centralizada.
+## 🛠️ Instalación y Desarrollo Local
 
-### 🎒 Portales de Estrategia (Client Workspaces)
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/Charran78/CONCIERGE_CRM.git
+   cd CONCIERGE_CRM
+   ```
 
-* **Roadmap Personalizado**: Crea checklists de implementación compartidos con el cliente para guiarlo hacia el éxito.
-* **Repositorio de Recursos**: Comparte materiales, demos y documentos estratégicos de forma segura.
-* **Asesor de Estrategia IA**: Un consultor dedicado que analiza el historial del lead y sugiere los mejores pasos y materiales para cerrar la venta.
-* **Acceso Seguro**: Los portales se acceden mediante un token único (hash seguro), sin necesidad de login para el cliente final.
+2. Instala las dependencias:
+   ```bash
+   npm install
+   ```
 
-### 📊 Dashboard de Alto Impacto
+3. Configura las variables de entorno creando un archivo `.env.local`:
+   ```env
+   NEXT_PUBLIC_SUPABASE_URL=tu_supabase_url
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=tu_supabase_anon_key
+   SUPABASE_SERVICE_ROLE_KEY=tu_supabase_service_role_key
+   GROQ_API_KEY=tu_groq_api_key
+   ```
 
-* **Métricas en Tiempo Real**: Visualización de leads activos, tasa de conversión y valor del pipeline.
-* **Alertas Inteligentes**: Notificaciones sobre leads que requieren atención inmediata o hitos alcanzados en los portales.
+4. Ejecuta las migraciones de base de datos en tu panel de Supabase usando el archivo ubicado en `supabase/migrations/001_initial_schema.sql`.
 
-### 📧 Hub de Email con IA
+5. Inicia el servidor de desarrollo:
+   ```bash
+   npm run dev
+   ```
 
-* **Redacción Estratégica**: Generación automática de borradores de email basados en el contexto específico de cada lead.
-* **Historial Persistente**: Registro automático de toda la comunicación en la base de datos para asegurar la trazabilidad.
-
-### 🧩 Componentes modales reutilizables
-- `AIModal`, `ScheduleModal`, `QuickEmailModal`, `QuoteBuilderModal`, `PhoneCallModal`…
-- Todos ellos **100% responsivos** (mobile-first con Tailwind CSS).
-
----
-
-## 🗄️ Modelo de Datos
-
-La aplicación utiliza un esquema relacional optimizado en Supabase para mantener la integridad de la estrategia de ventas:
-
-| Tabla | Propósito |
-|-------|-----------|
-| `contacts` | Lead principal + campo `summary_ai` (Resumen Maestro) |
-| `contact_notes` | Insights generados por IA (razonamiento, sentimiento, health score) |
-| `email_history` | Registro de correos enviados (asunto, cuerpo, fecha) |
-| `calendar_events` | Citas vinculadas a contactos |
-| `quotes` | Cotizaciones (items, totales, estado) |
-| `client_portals` | Portales de cliente (token único, activo/inactivo) |
-| `portal_tasks` | Tareas del roadmap (orden, completado) |
-| `portal_resources` | Recursos compartidos (título, URL) |
-| `portal_activity` | Traza de acciones del cliente (acceso, tarea completada, etc.) |
-
----
-
-## 🛠️ Stack tecnológico
-
-| Capa | Tecnología |
-|------|-------------|
-| **Frontend** | Next.js 14 (App Router), React, Tailwind CSS |
-| **Backend + Auth** | Supabase (PostgreSQL, Realtime, Row Level Security) |
-| **IA Generativa** | ProInsight AI (motor sobre Groq/LLM) – llamadas desde API routes de Next.js para seguridad de claves |
-| **Iconos** | Lucide React |
-| **Animaciones** | Tailwind CSS (clases `animate-*`) |
-
----
-
-## ⚙️ Configuración e Instalación
-
-### 1. Clonar y Preparar
-
-```bash
-git clone https://github.com/charran78/total-pro-lead-converter.git
-cd TOTAL_PRO_LEAD_CONVERTER
-npm install
-```
-
-### 2. Variables de Entorno
-
-Crea un archivo `.env.local` en la raíz del proyecto con las siguientes claves:
-
-```env
-NEXT_PUBLIC_SUPABASE_URL=tu_url_de_supabase
-NEXT_PUBLIC_SUPABASE_ANON_KEY=tu_anon_key_de_supabase
-GROQ_API_KEY=tu_api_key_de_groq
-```
-
-### 3. Ejecutar en Desarrollo
-
-```bash
-npm run dev
-```
-
----
-
-## 📂 Estructura del Proyecto
-
-* `src/app/`: Rutas, layouts y páginas principales (incluyendo el Portal público en `/portal/[token]`).
-* `src/components/`:
-  * `crm/`: Ficha del lead, modales de IA y gestión de contactos.
-  * `portal/`: Componentes del espacio de trabajo del cliente.
-  * `emails/`: Hub de redacción y gestión de comunicaciones.
-  * `dashboard/`: Vistas de métricas y alertas.
-* `src/hooks/`: Lógica reutilizable para Portales, CRM e IA.
-* `src/lib/`: Utilidades de conexión con Supabase y envoltorio de la API de Groq.
-
-## 📂 Estructura del proyecto (resumida)
-```text
-src/
-├── app/
-│   ├── page.tsx                 # Layout principal + routing de tabs
-│   ├── portal/[token]/page.tsx  # Vista pública del cliente
-│   └── api/                     # Rutas seguras para IA (server-side)
-├── components/
-│   ├── auth/                    # Login/registro
-│   ├── crm/                     # CRMView, ContactDetailModal, AIModal...
-│   ├── portals/                 # PortalsDashboard, PortalEditor, ClientPortalView
-│   ├── emails/                  # EmailHubView, QuickEmailModal
-│   ├── calendar/                # CalendarView, ScheduleModal
-│   ├── pricing/                 # PricingView (registro de intención)
-│   ├── dashboard/               # DashboardView, métricas
-│   └── ui/                      # StatusBadge, StatusDropdown, etc.
-├── hooks/
-│   └── usePortals.ts            # Lógica para portales (activar, tareas, recursos...)
-├── lib/
-│   ├── supabase.ts              # Cliente de Supabase
-│   ├── types.ts                 # Tipos globales (Contact, CalendarEvent...)
-│   └── utils.ts                 # fetchAI, extractJSON, cn, etc.
-
-```
-
-## 📱 Diseño responsivo (mobile-first)
-
-Todos los componentes han sido adaptados siguiendo una guía estricta:
-
-Paddings: px-4 py-4 md:px-8 md:py-8 (móvil compacto, escritorio amplio).
-
-Flex/Grid: flex-col md:flex-row, grid-cols-1 md:grid-cols-n.
-
-Tablas: envueltas en <div className="overflow-x-auto w-full"> + min-w-[600px] md:min-w-full.
-
-Anchos fijos → w-full con límite md:max-w-xl.
-
-Imágenes: max-w-full h-auto.
-
-Modales: centrados, con padding responsivo y max-h-[90vh].
-
-Esto garantiza una experiencia óptima tanto en móvil como en escritorio.
-
----
-
-## 🗺️ Roadmap de Próximas Mejoras
-
-* [ ] **Programación de Emails**: Capacidad de agendar correos para su envío automático posterior.
-* [ ] **Conectividad Externa**: Exportación de notas y resúmenes a Notion u Obsidian.
-* [ ] **Automatizaciones**: Webhooks para integración con n8n y otros sistemas de workflow.
-* [ ] **Sistema BYOK**: Opción para que el usuario final traiga su propia clave de IA (Bring Your Own Key).
-
----
-
-Desarrollado con ❤️ para transformar leads en clientes de por vida.
+## 🔒 Seguridad y Arquitectura
+Este proyecto implementa políticas RLS (Row Level Security) estrictas. Los clientes solo tienen acceso de lectura (sin autenticación requerida) a su propio Portal VIP y Bóveda Digital a través de un `share_token` seguro encriptado. Los asesores deben autenticarse para modificar el CRM y subir recursos.
