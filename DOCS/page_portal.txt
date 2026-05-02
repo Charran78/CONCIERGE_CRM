@@ -1,0 +1,429 @@
+import React, { useState, useEffect, useRef } from 'react';
+import { 
+  User, MapPin, Calendar, MessageSquare, ShieldCheck, 
+  Compass, Heart, Star, ChevronRight, Menu, X, Bell, 
+  Sparkles, Send, Loader2, FileText, Volume2, Image as ImageIcon, 
+  Scan, Coffee, Globe, Zap, Play, Info
+} from 'lucide-react';
+
+// --- Configuración de API ---
+const apiKey = ""; 
+const GEMINI_MODEL = "gemini-2.5-flash-preview-09-2025";
+const IMAGE_MODEL = "imagen-4.0-generate-001";
+const TTS_MODEL = "gemini-2.5-flash-preview-tts";
+
+const App = () => {
+  const [aiLoading, setAiLoading] = useState(false);
+  const [chatInput, setChatInput] = useState("");
+  const [chatMessages, setChatMessages] = useState([
+    { role: 'assistant', content: 'Bienvenido, Sr. Valdivieso. He sincronizado su logística para Atacama. ¿Desea que le lea el resumen de bienestar para su llegada?' }
+  ]);
+  const [isPlayingAudio, setIsPlayingAudio] = useState(false);
+  const [wellnessReport, setWellnessReport] = useState(null);
+  const [generatedImage, setGeneratedImage] = useState(null);
+  const [feelingInspiration, setFeelingInspiration] = useState(null);
+
+  const userData = {
+    name: "Sr. Alejandro Valdivieso",
+    tier: "Black Tier Member",
+    destination: "Desierto de Atacama, Chile",
+    arrivalDate: "22 de Abril, 2026"
+  };
+
+  const feelings = [
+    { id: 'asombro', label: 'Asombro', icon: <Star />, color: 'bg-amber-50', prompt: 'Un observatorio privado en el desierto, arquitectura brutalista de cristal, noche estrellada infinita.' },
+    { id: 'paz', label: 'Paz', icon: <Heart />, color: 'bg-blue-50', prompt: 'Un templo zen moderno rodeado de agua, minimalismo absoluto, niebla matutina.' },
+    { id: 'aventura', label: 'Adrenalina', icon: <Compass />, color: 'bg-emerald-50', prompt: 'Helicóptero sobrevolando glaciares vírgenes, estética cinematográfica de aventura.' },
+    { id: 'conexion', label: 'Conexión', icon: <Globe />, color: 'bg-rose-50', prompt: 'Cena privada en una mesa de piedra volcánica bajo la luz de velas, entorno ancestral.' },
+  ];
+
+  // --- Funciones de IA ---
+
+  const callGemini = async (prompt, systemInstruction = "") => {
+    try {
+      const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${apiKey}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          contents: [{ parts: [{ text: prompt }] }],
+          systemInstruction: { parts: [{ text: systemInstruction }] }
+        })
+      });
+      const data = await response.json();
+      return data.candidates?.[0]?.content?.parts?.[0]?.text;
+    } catch (error) {
+      console.error("Error calling Gemini:", error);
+      return "Lo siento, mi conexión con la central de inteligencia ha tenido un breve parpadeo. ¿Podemos intentarlo de nuevo?";
+    }
+  };
+
+  const generateVisionImage = async (prompt) => {
+    try {
+      const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${IMAGE_MODEL}:predict?key=${apiKey}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          instances: [{ prompt: `Luxury travel concept, high-end photography, cinematic lighting, ${prompt}` }],
+          parameters: { sampleCount: 1 }
+        })
+      });
+      const data = await response.json();
+      return `data:image/png;base64,${data.predictions[0].bytesBase64Encoded}`;
+    } catch (error) {
+      console.error("Error generating image:", error);
+      return null;
+    }
+  };
+
+  const speakText = async (text) => {
+    if (isPlayingAudio) return;
+    setIsPlayingAudio(true);
+    try {
+      const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${TTS_MODEL}:generateContent?key=${apiKey}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          contents: [{ parts: [{ text: `Say this with a sophisticated, calm, and professional female concierge voice: ${text}` }] }],
+          generationConfig: {
+            responseModalities: ["AUDIO"],
+            speechConfig: { voiceConfig: { prebuiltVoiceConfig: { voiceName: "Leda" } } }
+          }
+        })
+      });
+      const data = await response.json();
+      const base64Audio = data.candidates[0].content.parts[0].inlineData.data;
+      
+      const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+      const audioBuffer = await audioContext.decodeAudioData(Uint8Array.from(atob(base64Audio), c => c.charCodeAt(0)).buffer);
+      const source = audioContext.createBufferSource();
+      source.buffer = audioBuffer;
+      source.connect(audioContext.destination);
+      source.start(0);
+      source.onended = () => setIsPlayingAudio(false);
+    } catch (error) {
+      console.error("Audio error:", error);
+      setIsPlayingAudio(false);
+    }
+  };
+
+  const handleWellnessAnalysis = async () => {
+    setAiLoading(true);
+    const result = await callGemini(
+      "Analiza un viaje al Desierto de Atacama llegando en jet privado. Sugiere 3 consejos de biohacking para evitar el jet lag y la deshidratación por altura.",
+      "Eres un experto en medicina de viajes de lujo. Tu tono es ultra-profesional y exclusivo."
+    );
+    setWellnessReport(result);
+    setAiLoading(false);
+  };
+
+  const handleFeelingInspiration = async (feeling) => {
+    setAiLoading(true);
+    setFeelingInspiration(null);
+    setGeneratedImage(null);
+    
+    const [story, image] = await Promise.all([
+      callGemini(`Crea una micro-narrativa de una experiencia de ${feeling.label} en un viaje de lujo.`, "Eres un diseñador de experiencias para Black Tomato. Vendes sueños, no hoteles."),
+      generateVisionImage(feeling.prompt)
+    ]);
+
+    setFeelingInspiration(story);
+    setGeneratedImage(image);
+    setAiLoading(false);
+  };
+
+  const handleSendMessage = async (e) => {
+    e.preventDefault();
+    if (!chatInput.trim()) return;
+    
+    const userMsg = chatInput;
+    setChatMessages(prev => [...prev, { role: 'user', content: userMsg }]);
+    setChatInput("");
+    setAiLoading(true);
+
+    const response = await callGemini(userMsg, "Eres Elena, la concierge personal del Sr. Valdivieso. Eres eficiente, culta y siempre te anticipas a sus necesidades.");
+    setChatMessages(prev => [...prev, { role: 'assistant', content: response }]);
+    setAiLoading(false);
+  };
+
+  return (
+    <div className="min-h-screen bg-[#F9F8F6] text-[#1A1A1A] font-sans selection:bg-amber-100">
+      {/* --- Navegación --- */}
+      <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-stone-200 z-50">
+        <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+          <div className="flex items-center gap-8">
+            <span className="text-xl font-serif tracking-[0.3em] uppercase">Black Tomato</span>
+            <div className="hidden md:flex gap-6 text-[10px] uppercase tracking-widest font-bold text-stone-400">
+              <a href="#" className="text-black">Escritorio</a>
+              <a href="#" className="hover:text-black">Explorar</a>
+              <a href="#" className="hover:text-black">Bóveda</a>
+            </div>
+          </div>
+          <div className="flex items-center gap-4">
+            <div className="text-right hidden sm:block">
+              <p className="text-[10px] uppercase tracking-tighter font-bold text-amber-600">Soporte Prioritario</p>
+              <p className="text-xs font-medium">Elena Ruiz</p>
+            </div>
+            <div className="w-10 h-10 rounded-full bg-stone-100 border border-stone-200 flex items-center justify-center">
+              <User size={20} className="text-stone-400" />
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <main className="pt-32 pb-20 px-6 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
+          
+          {/* --- Columna Izquierda: Dashboard --- */}
+          <div className="lg:col-span-8 space-y-10">
+            <section className="animate-in fade-in slide-in-from-bottom-4 duration-700">
+              <div className="flex items-center gap-2 mb-4">
+                <span className="h-[1px] w-8 bg-amber-600"></span>
+                <p className="text-amber-700 text-[10px] uppercase tracking-[0.4em] font-black italic">{userData.tier}</p>
+              </div>
+              <h1 className="text-6xl md:text-7xl font-serif mb-6 tracking-tight">{userData.name}</h1>
+              <p className="text-stone-400 max-w-md text-sm leading-relaxed">
+                Su próximo hito: <span className="text-black font-medium">{userData.destination}</span>. 
+                Todo está siendo orquestado para su llegada el {userData.arrivalDate}.
+              </p>
+            </section>
+
+            {/* Itinerario Activo con IA ✨ */}
+            <div className="relative overflow-hidden rounded-[3rem] bg-stone-900 text-white p-12 min-h-[400px] flex flex-col justify-between shadow-2xl group">
+              <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1444464666168-49d633b86797?auto=format&fit=crop&q=80')] bg-cover opacity-30 group-hover:scale-105 transition-transform duration-1000"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-stone-900 via-transparent to-transparent"></div>
+              
+              <div className="relative z-10">
+                <div className="flex justify-between items-start mb-8">
+                  <span className="bg-white/10 backdrop-blur-md border border-white/20 px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest">En curso</span>
+                  <button 
+                    onClick={handleWellnessAnalysis}
+                    className="bg-amber-500 hover:bg-amber-400 text-white px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest flex items-center gap-2 transition-all shadow-lg"
+                  >
+                    <Coffee size={14} /> Reporte Bienestar ✨
+                  </button>
+                </div>
+                <h2 className="text-5xl font-serif max-w-xl leading-tight mb-4">{userData.destination}</h2>
+                <div className="flex gap-8 text-sm text-stone-300">
+                  <div className="flex items-center gap-2"><MapPin size={14} /> Atacama Lodge</div>
+                  <div className="flex items-center gap-2"><Zap size={14} /> Logística Privada</div>
+                </div>
+              </div>
+
+              <div className="relative z-10 flex flex-wrap gap-4 mt-8">
+                <button className="bg-white text-black px-8 py-4 rounded-full text-[10px] font-bold uppercase tracking-widest hover:bg-amber-50 transition shadow-xl">Gestionar Itinerario</button>
+                <button className="bg-white/10 backdrop-blur-md border border-white/20 px-8 py-4 rounded-full text-[10px] font-bold uppercase tracking-widest hover:bg-white/20 transition">Detalles del Vuelo</button>
+              </div>
+
+              {/* Modal de Bienestar IA ✨ */}
+              {wellnessReport && (
+                <div className="absolute inset-0 z-20 bg-white text-black p-10 animate-in fade-in zoom-in duration-300">
+                  <div className="flex justify-between items-center mb-6">
+                    <h3 className="text-2xl font-serif italic">Análisis de Biohacking ✨</h3>
+                    <button onClick={() => setWellnessReport(null)} className="p-2 hover:bg-stone-100 rounded-full"><X size={20}/></button>
+                  </div>
+                  <div className="prose prose-stone prose-sm">
+                    <p className="whitespace-pre-wrap leading-relaxed italic text-stone-600">{wellnessReport}</p>
+                  </div>
+                  <button className="mt-8 bg-stone-900 text-white w-full py-4 rounded-xl text-[10px] font-bold uppercase tracking-widest">Aplicar recomendaciones al plan</button>
+                </div>
+              )}
+            </div>
+
+            {/* Feelings Engine con IA ✨ */}
+            <section className="space-y-8">
+              <div className="flex items-end justify-between">
+                <div>
+                  <h3 className="text-3xl font-serif mb-2 italic">Motor de Emociones ✨</h3>
+                  <p className="text-stone-400 text-sm">¿Cómo desea sentirse en su próxima exploración?</p>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                {feelings.map((f) => (
+                  <button 
+                    key={f.id} 
+                    onClick={() => handleFeelingInspiration(f)}
+                    className="bg-white border border-stone-200 p-8 rounded-[2rem] hover:border-amber-500 hover:shadow-xl transition-all group flex flex-col items-center text-center gap-4"
+                  >
+                    <div className={`w-12 h-12 rounded-2xl ${f.color} flex items-center justify-center text-stone-600 group-hover:scale-110 transition-transform`}>
+                      {f.icon}
+                    </div>
+                    <span className="text-sm font-bold uppercase tracking-widest">{f.label}</span>
+                    <span className="text-[9px] text-stone-400 font-medium">Inspirar por IA ✨</span>
+                  </button>
+                ))}
+              </div>
+
+              {feelingInspiration && (
+                <div className="mt-6 bg-white border border-stone-100 rounded-[3rem] p-12 shadow-2xl animate-in slide-in-from-bottom-8">
+                  <div className="grid md:grid-cols-2 gap-10 items-center">
+                    <div className="space-y-6">
+                      <div className="flex items-center gap-2">
+                        <Sparkles size={16} className="text-amber-600" />
+                        <span className="text-[10px] font-black uppercase tracking-[0.3em] text-amber-800">Visión Exclusiva ✨</span>
+                      </div>
+                      <p className="text-2xl font-serif leading-relaxed italic">"{feelingInspiration}"</p>
+                      <button className="bg-stone-900 text-white px-8 py-4 rounded-full text-[10px] font-bold uppercase tracking-widest shadow-lg">Solicitar Diseño de Viaje</button>
+                    </div>
+                    <div className="relative aspect-square rounded-[2rem] overflow-hidden bg-stone-50 border border-stone-100">
+                      {generatedImage ? (
+                        <img src={generatedImage} alt="Visión IA" className="w-full h-full object-cover animate-in fade-in duration-1000" />
+                      ) : (
+                        <div className="w-full h-full flex flex-col items-center justify-center text-stone-300 gap-4">
+                          <Loader2 className="animate-spin" />
+                          <p className="text-[10px] uppercase font-bold tracking-widest">Pintando su visión... ✨</p>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              )}
+            </section>
+          </div>
+
+          {/* --- Columna Derecha: Concierge IA ✨ --- */}
+          <div className="lg:col-span-4">
+            <div className="sticky top-28 bg-white border border-stone-200 rounded-[3rem] shadow-sm flex flex-col h-[700px] overflow-hidden transition-all hover:shadow-md">
+              
+              {/* Header Chat */}
+              <div className="p-8 border-b border-stone-100 bg-stone-50/50 flex items-center justify-between">
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-amber-100 rounded-2xl flex items-center justify-center text-amber-800 relative">
+                    <User size={24} />
+                    <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-emerald-500 rounded-full border-4 border-white"></div>
+                  </div>
+                  <div>
+                    <h4 className="font-serif text-lg leading-none">Elena Ruiz</h4>
+                    <p className="text-[9px] uppercase tracking-widest text-stone-400 font-bold mt-1">Online • Su Concierge</p>
+                  </div>
+                </div>
+                <button 
+                  onClick={() => speakText(chatMessages[chatMessages.length - 1].content)}
+                  disabled={isPlayingAudio}
+                  className={`p-3 rounded-full transition-all ${isPlayingAudio ? 'bg-amber-100 text-amber-800 animate-pulse' : 'bg-white text-stone-300 hover:text-amber-800 shadow-sm'}`}
+                >
+                  <Volume2 size={20} />
+                </button>
+              </div>
+
+              {/* Mensajes */}
+              <div className="flex-1 overflow-y-auto p-8 space-y-6 scrollbar-hide">
+                {chatMessages.map((msg, i) => (
+                  <div key={i} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
+                    <div className={`max-w-[85%] p-5 rounded-[1.5rem] text-sm leading-relaxed ${
+                      msg.role === 'user' 
+                      ? 'bg-stone-900 text-white rounded-tr-none' 
+                      : 'bg-stone-50 text-stone-800 rounded-tl-none border border-stone-100'
+                    }`}>
+                      {msg.content}
+                    </div>
+                  </div>
+                ))}
+                {aiLoading && (
+                  <div className="flex justify-start">
+                    <div className="bg-stone-50 p-4 rounded-full animate-pulse">
+                      <div className="flex gap-1">
+                        <div className="w-1.5 h-1.5 bg-stone-300 rounded-full animate-bounce"></div>
+                        <div className="w-1.5 h-1.5 bg-stone-300 rounded-full animate-bounce [animation-delay:-0.15s]"></div>
+                        <div className="w-1.5 h-1.5 bg-stone-300 rounded-full animate-bounce [animation-delay:-0.3s]"></div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
+
+              {/* Input Chat con Visión ✨ */}
+              <form onSubmit={handleSendMessage} className="p-6 border-t border-stone-100 bg-white">
+                <div className="relative mb-4">
+                  <input 
+                    type="text" 
+                    value={chatInput}
+                    onChange={(e) => setChatInput(e.target.value)}
+                    placeholder="Escriba aquí su solicitud..."
+                    className="w-full bg-stone-50 border-none rounded-full px-8 py-5 text-sm focus:ring-2 focus:ring-amber-500/20 outline-none pr-16"
+                  />
+                  <button type="submit" className="absolute right-2 top-2 bg-stone-900 text-white p-3 rounded-full hover:bg-amber-700 transition shadow-lg">
+                    <Send size={18} />
+                  </button>
+                </div>
+                <div className="flex gap-2">
+                  <button 
+                    type="button"
+                    className="flex-1 flex items-center justify-center gap-2 bg-stone-50 text-stone-400 py-3 rounded-2xl text-[9px] font-bold uppercase tracking-widest hover:bg-stone-100 transition"
+                  >
+                    <Scan size={14} /> Escanear Documento ✨
+                  </button>
+                  <button 
+                    type="button"
+                    className="flex-1 flex items-center justify-center gap-2 bg-stone-50 text-stone-400 py-3 rounded-2xl text-[9px] font-bold uppercase tracking-widest hover:bg-stone-100 transition"
+                  >
+                    <Globe size={14} /> Traducir ✨
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            {/* Bóveda de Documentos */}
+            <div className="mt-8 bg-white border border-stone-200 rounded-[2.5rem] p-8 shadow-sm">
+              <div className="flex items-center justify-between mb-6">
+                <h5 className="font-serif text-xl">Bóveda Digital</h5>
+                <ShieldCheck size={20} className="text-emerald-500" />
+              </div>
+              <div className="space-y-3">
+                {['Pasaporte VIP', 'Visa Chile', 'Seguro Global'].map((doc, idx) => (
+                  <div key={idx} className="flex items-center justify-between p-4 bg-stone-50 rounded-2xl border border-stone-100 hover:border-amber-400 transition cursor-pointer group">
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center shadow-sm text-stone-300 group-hover:text-amber-800 transition">
+                        <FileText size={18} />
+                      </div>
+                      <div>
+                        <p className="text-[10px] font-bold uppercase tracking-tight">{doc}</p>
+                        <p className="text-[9px] text-stone-400">Verificado • 2026</p>
+                      </div>
+                    </div>
+                    <ChevronRight size={14} className="text-stone-300 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </main>
+
+      <footer className="border-t border-stone-200 py-20 px-6 bg-white">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12">
+          <div className="max-w-sm">
+            <span className="text-xl font-serif tracking-[0.3em] uppercase mb-6 block">Black Tomato</span>
+            <p className="text-stone-400 text-sm leading-relaxed italic">
+              "El lujo no es lo que tienes, es cómo lo experimentas. Estamos aquí para asegurar que cada segundo de su tiempo sea una obra maestra."
+            </p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-12">
+            <div>
+              <h6 className="text-[10px] font-bold uppercase tracking-[0.2em] mb-6">Servicios</h6>
+              <ul className="text-stone-400 text-xs space-y-4">
+                <li><a href="#" className="hover:text-black">Aviación Privada</a></li>
+                <li><a href="#" className="hover:text-black">Seguridad Biométrica</a></li>
+                <li><a href="#" className="hover:text-black">Salas VIP</a></li>
+              </ul>
+            </div>
+            <div>
+              <h6 className="text-[10px] font-bold uppercase tracking-[0.2em] mb-6">Legal</h6>
+              <ul className="text-stone-400 text-xs space-y-4">
+                <li><a href="#" className="hover:text-black">Privacidad</a></li>
+                <li><a href="#" className="hover:text-black">Términos VIP</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="max-w-7xl mx-auto mt-20 pt-10 border-t border-stone-100 flex justify-between items-center text-[10px] text-stone-300 font-bold uppercase tracking-widest">
+          <span>© 2026 Black Tomato Intelligence</span>
+          <span>Encrypted with AES-256</span>
+        </div>
+      </footer>
+    </div>
+  );
+};
+
+export default App;

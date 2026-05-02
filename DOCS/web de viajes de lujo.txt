@@ -1,0 +1,1456 @@
+Black Tomato opera como un diseñador de viajes de lujo enfocado en la hiper-personalización, utilizando herramientas emocionales como "Feelings Engine" para captar leads y un equipo de expertos para crear itinerarios a medida. El servicio incluye una aplicación personalizada, soporte 24/7 en terreno y la exclusiva opción de alojamiento "Blink", centralizando la experiencia VIP en una plataforma que elimina la fricción para el usuario. Para más detalles sobre su metodología, visite Black Tomato.
+
+
+Esta es la disección técnica y estratégica de Black Tomato, estructurada para que puedas replicar su ADN en el diseño de tu aplicación. Black Tomato no vende "vuelos y hoteles"; vende identidad, estatus y narrativa.
+Aquí tienes el informe detallado basado en su estructura actual:
+________________________________________
+1. Estrategia de Captación (Top of the Funnel)
+Black Tomato no usa buscadores de ofertas; usa segmentación por psicología y momento vital.
+•	El "Who" (Segmentación por Cohorte): En lugar de "Destinos", su menú principal prioriza quién eres: Viajes con adolescentes, Familias con hijos adultos, Viajes de aniversario.
+o	Lección para tu App: El onboarding de tu app no debe preguntar "¿A dónde quieres ir?", sino "¿Cómo te quieres sentir?" o "¿A quién quieres impresionar/reunir?".
+•	El "Feelings Engine" (Motor de Emociones): Es su herramienta de captación estrella. Clasifican los viajes por sentimientos (Aventura, Introspección, Conexión).
+•	Contenido de Autor (Podcast y Prensa): Se posicionan como líderes de opinión. Su sección "In the Press" valida que son el referente para la élite.
+2. El Formulario de Entrada (El Filtro de Calidad)
+Cuando un cliente hace clic en "Enquire Now", el proceso deja de ser automático para volverse humano:
+•	Captura de Leads: No piden solo fechas. Piden el "porqué" del viaje.
+•	Asignación de Experto: El lead no va a un call center, va a un "Travel Expert" basado en Londres o Nueva York. Esto genera confianza inmediata: "Me atiende alguien que vive como yo".
+3. La Propuesta de Valor Personalizada (Middle of the Funnel)
+Una vez que el cliente contacta, Black Tomato entrega materiales que parecen piezas de diseño:
+•	Itinerarios Narrativos: No entregan un PDF aburrido. Entregan una historia. Usan herramientas interactivas donde el cliente puede ver fotos de alta resolución, mapas personalizados y descripciones poéticas de lo que vivirá.
+•	El Concepto "Blink": Ofrecen alojamientos temporales de lujo en lugares donde no existen hoteles. Esto es el "clímax" del lujo: la exclusividad total y efímera.
+4. La Experiencia del Cliente VIP (El Servicio Concierge)
+Para tu aplicación, debes replicar estos tres pilares de su servicio:
+•	Anticipación: Conocen las alergias, preferencias de almohadas y marcas de bebida favoritas antes de que el cliente llegue.
+•	Acceso "No Comprable": Su valor no es reservar el hotel, es conseguir que el chef del hotel cocine en privado para el cliente en una duna del desierto.
+•	Seguridad y Disponibilidad: Soporte 24/7 real. En la app, esto se traduce en un botón de chat directo con una persona real, no un bot.
+5. Estética y User Experience (UX/UI)
+Si estás diseñando la interfaz, fíjate en estos detalles de su web:
+•	Espacios en Blanco: Transmiten calma y exclusividad.
+•	Tipografía Serif: Aporta elegancia clásica y autoridad.
+•	Color "Rosa Black Tomato": Un toque moderno (casi transgresor) que los separa de las agencias de lujo tradicionales y aburridas.
+•	Imágenes de Estilo de Vida: No usan fotos de stock de habitaciones vacías. Usan fotos de personas viviendo experiencias, a menudo con encuadres cinematográficos.
+6. Fidelización y Post-Viaje
+•	Feedback Humano: Tras el viaje, el experto llama personalmente. No envían una encuesta de satisfacción genérica.
+•	Memoria de Viaje: A menudo entregan regalos físicos o digitales que resumen el viaje (álbumes de fotos premium o videos editados).
+________________________________________
+Resumen para tu Aplicación:
+Para que tu app tenga éxito en este sector, debe ser:
+1.	Invisible pero Omnipresente: Interfaz limpia, pero con un conserje real a un toque de distancia.
+2.	Narrativa: Cada sección debe contar una historia, no listar precios.
+3.	Predictiva: Basada en datos previos para sugerir el próximo "hito" (ej. "Su hija cumple 15 años, aquí tiene 3 destinos que la deslumbrarán").
+Para que un cliente de ultra-lujo (UHNWI - Ultra High Net Worth Individuals) use una aplicación, esta no debe sentirse como una herramienta de gestión, sino como un asistente personal digital. El panel VIP debe respirar exclusividad, minimalismo y, sobre todo, ahorro de tiempo.
+Aquí tienes la estructura técnica y de experiencia para el Panel del Cliente VIP:
+1. La "Home" del Cliente: El Tablero de Control Emocional
+No debe haber botones de "Configuración" o "Ayuda" genéricos. La pantalla principal se divide en:
+•	El Próximo Hito (Hero Section): Un contador visual elegante hacia el próximo viaje. Imagen de altísima calidad del destino y un mensaje directo: "Sr. Smith, su refugio en Botsuana lo espera en 12 días".
+•	Acceso Directo al Concierge: Un botón flotante o destacado con la foto de su agente asignado. No es un icono de "chat", es la cara de "James, tu experto". Al tocarlo, abre una línea directa (WhatsApp integrado o chat encriptado).
+2. El Itinerario Dinámico (Storytelling UI)
+Olvídate de las listas tipo calendario de Google. El itinerario debe ser una línea de tiempo visual y narrativa:
+•	Capas de Información:
+o	Nivel 1: Título sugerente ("Cena bajo las estrellas en el desierto").
+o	Nivel 2 (Tap): Detalles logísticos (Matrícula del coche que le recoge, nombre del guía, menú pre-seleccionado).
+o	Nivel 3 (Deep Dive): "El porqué": Una nota del experto explicando por qué se eligió ese viñedo específico para él.
+•	Modo Offline Total: El cliente puede estar en medio del Amazonas. Todo el itinerario, mapas y documentos deben ser accesibles sin conexión.
+3. La "Bóveda" de Preferencias (The Profile Vault)
+Aquí es donde la app demuestra que "conoce" al cliente. Es un repositorio de datos psicográficos:
+•	Preferencias de Estilo de Vida: Talla de calzado (para actividades), marcas de agua favoritas, alergias, tipo de almohada, temperatura ideal de la habitación al llegar.
+•	Documentación Cifrada: Pasaportes, visas y certificados de salud accesibles en un clic (seguridad biométrica obligatoria).
+•	El Historial de Momentos: Una galería de los mejores momentos de viajes pasados, reforzando la nostalgia y la lealtad a la marca.
+4. Notificaciones "Ghost" (Estrategia de Comunicación)
+Un cliente VIP odia el spam. Las notificaciones deben ser:
+•	Transaccionales Críticas: "Su avión privado ha aterrizado y le espera en la terminal F".
+•	De Deleite: "Hemos dejado una sorpresa en su suite, esperamos que la disfrute".
+•	Nunca de Marketing: Nunca enviar ofertas genéricas por la app.
+5. El "Buscador de Inspiración" Privado
+Una sección de "Solo para ti" basada en IA y curaduría humana:
+•	Si el cliente viajó a Japón y ama el minimalismo, el sistema le muestra un concepto de Blink (campamento efímero) en Groenlandia diseñado bajo esa misma estética.
+•	Botón "Make it happen": Sin formularios largos. Un toque para decirle al experto: "Me gusta esto, hablemos".
+Detalles Técnicos de Interfaz (Look & Feel):
+•	Micro-interacciones: Transiciones suaves y lentas. La rapidez extrema se siente "barata"; la fluidez deliberada se siente lujosa.
+•	Modo Oscuro Premium: Usa negros profundos (#000000) y acentos en dorado mate o el rosa característico de Black Tomato para resaltar puntos de acción.
+•	Biometría: FaceID integrado en cada paso delicado para que el cliente nunca tenga que recordar una contraseña.
+
+
+Para que el flujo de aprobación se sienta como un servicio de guante blanco y no como una transacción comercial, el proceso debe eliminar cualquier "fricción cognitiva". El cliente no debe sentir que está comprando, sino que está dando permiso para que la magia ocurra.
+Aquí tienes el diseño del flujo "The One-Tap Proposal" para la aplicación:
+1. El Aviso: La Notificación "Whisper" (Susurro)
+En lugar de un email genérico, el cliente recibe una notificación push elegante y personalizada:
+"Sr. Smith, hemos diseñado el concepto para su expedición a la Antártida. Está listo para su revisión en la Bóveda."
+2. La Presentación: Formato "Story-First"
+Al abrir la app, no aparece un presupuesto. Aparece una experiencia inmersiva:
+•	Video de Apertura: Un clip de 10 segundos en alta definición (un dron sobrevolando el hielo, una mesa servida) que establece el tono emocional.
+•	Narrativa Ejecutiva: Un mensaje breve de su experto asignado: "Entiendo que busca desconexión total; este itinerario evita las rutas turísticas y le sitúa en el corazón del silencio".
+•	Visualización en Scroll: El cliente desliza verticalmente para ver los puntos clave (Alojamiento, Experiencia Única, Logística) con fotos a pantalla completa.
+3. El Desglose: La "Transparencia Selectiva"
+Los clientes de alto nivel valoran la transparencia pero odian el detalle innecesario.
+•	Presupuesto Todo Incluido: Un solo número final que incluye todo (vuelos privados, propinas, tasas). No hay cargos ocultos.
+•	Acordeón de Detalles: Si el cliente desea ver el desglose técnico, puede desplegarlo, pero por defecto la interfaz se mantiene limpia.
+4. El "One-Tap Approval" (La firma sin fricción)
+Este es el momento crítico. La app debe permitir la aprobación sin salir del entorno:
+•	Botón de Acción: Un botón elegante que dice: "Aprobar itinerario y asegurar fechas".
+•	Confirmación Biométrica: En lugar de firmas digitales complejas o códigos SMS, se usa FaceID o TouchID. Esto vincula legalmente la aceptación y se siente tecnológico y seguro.
+•	Pasarela de Pago Invisible: Si el cliente tiene una tarjeta Black o AMEX Centurion ya vinculada en su "Bóveda", el pago del depósito se procesa en segundo plano.
+5. El "Efecto Post-Aprobación" (Feedback Inmediato)
+Nada más aprobar, la interfaz cambia instantáneamente para celebrar la decisión:
+•	Animación de Confirmación: Un sutil efecto visual (como un confeti digital minimalista o un cambio de luz en la pantalla).
+•	Mensaje de Calma: "Excelente elección, Sr. Smith. Nosotros nos encargamos de todo a partir de ahora. Su kit de bienvenida físico llegará a su oficina el martes".
+6. El Estado "En Preparación"
+Tras la aprobación, el viaje pasa a una sección activa donde el cliente puede ver una barra de progreso artesanal:
+•	"Reservando su Villa en el glaciar..."
+•	"Coordinando su encuentro con el biólogo marino..."
+•	"Personalizando su menú a bordo..."
+Por qué esto funciona para tu cliente de lujo:
+1.	Reduce la fatiga de decisión: Presentas una solución perfecta, no una lista de opciones.
+2.	Sensación de control: El cliente siente que tiene el mando, pero que el esfuerzo lo hace la agencia.
+3.	Inmediatez: Elimina el intercambio de PDFs, llamadas de confirmación y esperas innecesarias.
+El "Welcome Kit" es el puente entre lo digital y lo tangible. En el lujo, lo físico valida lo que se ha pagado digitalmente. Si el cliente acaba de aprobar un viaje de 50.000€ con un toque en tu app, el paquete que llega a su casa debe oler, sentirse y pesar como esa inversión.
+Aquí tienes el desglose de los materiales físicos para cerrar el círculo:
+1. El Continente: El "Black Box"
+No es un sobre de mensajería. Es una caja de cartón rígido texturizado, con cierre magnético y el logo de la empresa en stamping (relieve) plateado o cobre.
+•	El Aroma: Al abrir la caja, debe haber una fragancia sutil y exclusiva (marketing olfativo). Black Tomato suele usar aromas que evocan aventura o calma.
+2. El Contenido: Materiales que Inspiran y Guían
+•	El Itinerario Impreso (The Lookbook): No es una guía de viaje; es un libro de arte personalizado. Tapa dura, papel de alto gramaje, con el nombre del cliente en la portada: "La Expedición de la Familia Smith". Contiene fotos del destino que parecen sacadas de National Geographic.
+•	Documentación en Cuero: Una carpeta o porta-pasaportes de piel legítima (con las iniciales del cliente grabadas) que contiene las tarjetas de embarque físicas, etiquetas de equipaje de alta resistencia y una tarjeta de contacto directa con el concierge.
+•	Regalos Predictivos (The "Ahead of Time" Gifts): Objetos útiles para el destino específico.
+o	¿Viaje al Ártico? Unos guantes de cachemir de una marca de lujo local.
+o	¿Safari? Unos binoculares Leica compactos o un cuaderno de bitácora de cuero.
+o	¿Playa? Un protector solar orgánico de edición limitada.
+3. La Carta de Bienvenida
+Un tarjetón manuscrito (no impreso) por el experto que diseñó el viaje. Debe ser personal: "Sr. Smith, recordamos cuánto disfrutó el café en su último viaje a Italia; para este viaje a Vietnam, le hemos reservado una cata privada en...".
+4. Integración con tu App (El Momento Phygital)
+Para que tu aplicación siga siendo relevante en este punto físico, incluye lo siguiente:
+•	Códigos QR Elegantes: Dentro del libro impreso, pequeños códigos QR que, al ser escaneados por la app, abren vídeos exclusivos de los guías locales saludando al cliente o listas de reproducción de Spotify curadas para el destino.
+•	El "Unboxing" en la App: La app puede enviar una notificación justo cuando el paquete es entregado: "Su kit de viaje acaba de llegar. Ábralo y prepárese para soñar".
+5. El Kit de Emergencia Discreto
+Una pequeña caja o sobre dentro del kit con:
+•	Tarjetas de visita de los contactos locales.
+•	Moneda local en billetes pequeños para propinas iniciales (un detalle de "ultra-lujo" que ahorra la molestia de buscar un cajero al aterrizar).
+¿Cómo aplicar esto a tu diseño?
+Tu app debe tener una sección llamada "Mi Equipaje" o "Preparativos" donde el cliente pueda ver el estado del envío de este kit y, una vez recibido, una lista de chequeo de lo que contiene.
+¿Quieres que trabajemos en el flujo de post-viaje? Es decir, cómo la app recolecta el feedback y mantiene la relación viva para el próximo viaje sin ser invasiva.
+
+
+ESTRUCTURA:
+
+Top Links
+Home – Destinations – Inspirations – Pursuit of Feeling – Feelings Engine – Vacation Experiences – Where can I travel? – Most Popular – Get in Touch
+•	About us
+o	
+	5 reasons to book with us
+	Black Tomato in the Press
+	Client Testimonials
+	How it all works
+	Our Awards
+	Our people
+	Why not just do it yourself
+•	Agatha Christie
+•	Auberge: Remarkable Drives of Discovery
+•	Auberge: Take The Open Road
+•	Black Tomato x 007
+•	Blink
+•	Booking conditions
+•	Bring it Back
+•	Careers
+•	Cookie Policy
+•	Drone the World
+•	Eater Journeys
+•	Field Trip
+•	Get in Touch
+•	Get Lost
+•	Inspirations
+•	Online Inquiry
+•	Preferences
+•	Press Room
+•	Privacy Policy
+•	Proposal Service
+•	Set Jetting
+•	Surf Air
+•	Take Me On A Story
+•	Tasting Notes
+•	The Great American View
+•	Trip Finder
+•	What type of experience are you looking for?
+o	
+	Adventure Vacations
+	Eclipse Travel
+	Luxury Beach Vacations
+	Luxury Couples Vacations
+	Luxury Family Vacations
+	Family Travel: Grown Up Family (18+)
+	Family travel: Spring Break Vacations
+	Family travel: Summer Vacations
+	Family travel: Fall Vacations
+	Family travel: Vacations in the winter
+	Family travel: Multi Generational
+	Family Travel: Pre School (0-5)
+	When to travel with the family
+	Family travel: Vacations in February
+	Family travel: Vacations in May
+	Luxury Group Vacations
+	Luxury Honeymoons
+	January Honeymoons
+	February Honeymoons
+	March Honeymoons
+	April Honeymoons
+	May Honeymoons
+	June Honeymoons
+	July Honeymoons
+	August Honeymoons
+	September Honeymoons
+	November Honeymoons
+	October Honeymoons
+	December Honeymoons
+	Safari Honeymoons
+	Unusual Honeymoons
+	Beach Honeymoons
+	City Honeymoons
+	Mini-moons
+	Multi-center Honeymoons
+	Luxury Remote Vacations
+	Luxury Safari Vacations
+	Luxury Ski Vacations
+	Luxury Slow Vacations
+	Luxury Solo Vacations
+	Unusual Vacations
+•	Where to go when?
+o	
+	January
+	February
+	March
+	April
+	May
+	June
+	July
+	August
+	September
+	October
+	November
+	December
+
+¡Excelente trabajo de investigación! Has hecho los deberes y has extraído la **arquitectura de contenidos** de un titán del sector. Ahora viene la parte divertida: **No se trata de copiar todas esas páginas, sino de entender *por qué* las tienen y cómo emular esa estrategia con un equipo de 1 persona (tú).**
+
+Vamos a diseccionar esta lista monstruosa y convertirla en un plan de ataque realista para tu proyecto.
+
+### 1. Análisis Estratégico: ¿Por qué Black Tomato tiene 80+ páginas?
+
+No es solo por capricho de diseño. Es una máquina de **SEO y Conversión** perfectamente engrasada.
+
+- **Los Pilares de Autoridad (Top Links):** `Destinations`, `Inspirations`, `Pursuit of Feeling`. Esto es **Branding Puro**. Posicionan a la agencia como creadora de *conceptos*, no solo de billetes de avión.
+- **La Máquina SEO (Los Meses y Tipos de Viaje):** `January Honeymoons`, `February Honeymoons`, `Family Travel: Spring Break`...
+    - **Lógica:** Un cliente no busca en Google *"Agencia de viajes de lujo"*. Busca: *"Mejor luna de miel en Maldivas en **Enero**"*.
+    - **Estrategia:** Black Tomato crea una página específica para **cada intención de búsqueda de cola larga**. Es un trabajo titánico de redacción, pero captura tráfico muy cualificado.
+- **La Confianza (About Us):** Premios, Prensa, Testimonios. En el lujo, la **prueba social** es el 50% de la venta.
+
+### 2. Tu Estrategia Realista: La Pirámide de Contenido MVP
+
+No tienes un equipo de 20 redactores SEO. Tienes un cerebro y una herramienta de IA. Tu ventaja es la **tecnología** (el portal). Así que tu web debe ser una **tienda boutique**, no un hipermercado.
+
+Te propongo esta estructura de 3 niveles para empezar:
+
+| Nivel | Páginas a Crear (Inspiradas en BT) | Objetivo |
+| :--- | :--- | :--- |
+| **1. Núcleo** (5 páginas) | **Home** (Aspiracional)<br>**Cómo Funciona** (El Portal)<br>**Inspiración** (Blog/Feelings)<br>**Contacto**<br>**Sobre Mí** | Vender **TU MÉTODO** y generar el lead para probar el CRM. |
+| **2. SEO Táctico** (5-10 páginas) | **Luna de Miel de Lujo** (página genérica)<br>**Viajes en Familia** (genérica)<br>**Destinos destacados** (Italia, Japón, Costa Rica) | Empezar a captar tráfico de cola larga **sin desglosar por meses aún**. |
+| **3. Dinámico (Tu As en la Manga)** | **Landings de Portal** (Generadas por el CRM). | Cuando un asesor cree un viaje a "Tanzania en Agosto", el sistema genera una **micro-página pública** para ese viaje concreto. |
+
+### 3. Cómo Implementar la Estructura de Navegación (Top Links) en tu Web
+
+Olvídate de tener 20 enlaces en el menú principal. Eso abruma. Usa **Megamenús** o una estructura limpia.
+
+**Propuesta de Menú Principal (Réplica funcional de BT):**
+
+- **Destinos** -> *Dropdown con 6 destinos estrella + "Ver todos".*
+- **Estilos de Viaje** -> *Dropdown con: Luna de Miel, Aventura, Familiar, Slow Travel.* (Agrupas las 40 páginas de BT en 4 categorías).
+- **El Método** -> *Enlace directo a la página donde explicas **EL PORTAL DEL CLIENTE** (Tu gran diferencial).*
+- **Inspiración** -> *Blog / Feelings Engine.*
+- **Contacto** -> *Formulario cualificado (Lead Frío para el CRM).*
+
+### 4. El Mapeo de tu CRM con esta Estructura
+
+Aquí está la verdadera magia de tu proyecto. Black Tomato tiene que crear todas esas páginas a mano. **Tú puedes automatizar la más importante: La de la experiencia del cliente.**
+
+**Flujo de trabajo inspirado en la lista de BT:**
+
+1.  **Cliente potencial llega a tu web** por SEO (*"Luna de Miel en Enero"*).
+2.  Ve la **Página genérica de Luna de Miel**. No hay precios, solo un formulario de *"Cuéntanos tu sueño"*.
+3.  **El Asesor (CRM) recibe el lead.**
+4.  **El Asesor crea el Portal Privado** usando tu herramienta.
+5.  **¡Cierre del círculo!** Dentro de ese portal, el cliente encuentra una **réplica personalizada de lo que Black Tomato llama "Pursuit of Feeling"**.
+    - En lugar de leer 80 páginas web genéricas, el cliente lee **UNA PÁGINA** generada por IA dentro de su portal que dice: *"Tu Viaje a Tanzania en Agosto: La Migración te Espera"*.
+
+### 5. Lista de Prioridades para Desarrollar HOY
+
+Basado en tu lista de Black Tomato, esto es lo que sí o sí deberías implementar en tu web y portal para tener "Look & Feel" de lujo sin morir en el intento:
+
+| Elemento de Black Tomato | **Tu Réplica con tu Herramienta** | Complejidad |
+| :--- | :--- | :--- |
+| **Pursuit of Feeling** | Sección en el **Portal del Cliente** donde la IA describe el *mood* del viaje. | **Baja** (Es un prompt de IA). |
+| **Our People** | Foto tuya (o avatar profesional) + **Testimonio de tu primer cliente beta**. | **Media** (Conseguir el testimonio). |
+| **5 reasons to book with us** | 1. Portal Privado.<br>2. Asesoría Humana.<br>3. Sin Sorpresas.<br>4. Acceso VIP.<br>5. Tecnología Propia. | **Baja** (Escribir 5 bullets). |
+| **Where can I travel?** | Una sección de **Destinos Destacados** con 3 fotos muy buenas de Unsplash + un CTA a "Solicitar Propuesta Personalizada". | **Baja** |
+| **Agatha Christie / 007** | En el portal del cliente, una etiqueta que diga **"Experiencia Exclusiva Desbloqueada"** con un detalle especial (ej: Cena en un lugar secreto). | **Creativa** |
+
+**Conclusión:** No te agobies por las 80 páginas. Black Tomato lleva 20 años escribiéndolas. Tu ventaja es que tu **herramienta genera una página única y personalizada para CADA CLIENTE**. Eso es más potente que mil páginas genéricas de *"January Honeymoons"*. Enfócate en que el **Portal del Cliente** sea tan bueno que la gente quiera contactarte solo para ver cómo funciona "esa cosa tan exclusiva".
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxury Travel | Viajes a Medida con Portal Privado</title>
+  <!-- Tailwind via CDN (ideal para MVP rápido) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Fuente elegante -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .hero-pattern {
+      background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=2074&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center 30%;
+    }
+    .card-hover {
+      transition: all 0.3s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.05), 0 8px 10px -6px rgb(0 0 0 / 0.02);
+    }
+  </style>
+</head>
+<body class="bg-white text-slate-800 antialiased">
+
+  <!-- ===== TOP BAR (Estilo Black Tomato: minimalista) ===== -->
+  <div class="border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
+      <div class="flex items-center space-x-6 text-xs font-semibold tracking-wider text-slate-500">
+        <a href="#" class="hover:text-slate-900 transition">DESTINOS</a>
+        <a href="#" class="hover:text-slate-900 transition">INSPIRACIÓN</a>
+        <a href="#" class="hover:text-slate-900 transition">ESTILOS DE VIAJE</a>
+        <a href="#" class="hover:text-slate-900 transition">CÓMO FUNCIONA</a>
+      </div>
+      <div>
+        <a href="#" class="bg-slate-900 text-white px-5 py-2 text-xs font-bold tracking-widest uppercase rounded-full hover:bg-slate-800 transition shadow-sm">
+          Solicitar Propuesta
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== HERO (Aspiracional, tipo "Pursuit of Feeling") ===== -->
+  <div class="hero-pattern relative">
+    <div class="absolute inset-0 bg-black/30"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 flex flex-col items-start">
+      <span class="text-white/80 text-xs font-black tracking-[0.3em] uppercase mb-4">Pursuit of Feeling</span>
+      <h1 class="text-4xl md:text-6xl font-light text-white max-w-3xl leading-tight">
+        Viajes que despiertan <br/>
+        <span class="font-bold">los sentidos</span>
+      </h1>
+      <p class="text-white/90 text-lg md:text-xl mt-6 max-w-xl font-light">
+        Diseñamos experiencias a medida donde cada detalle está cuidado. Y ahora, con tu propio portal privado de viaje.
+      </p>
+      <div class="mt-8 flex gap-4">
+        <a href="#" class="bg-white text-slate-900 px-8 py-4 text-sm font-bold tracking-wider uppercase rounded-full hover:bg-slate-100 transition shadow-lg">
+          Descubre Destinos
+        </a>
+        <a href="#" class="border border-white text-white px-8 py-4 text-sm font-bold tracking-wider uppercase rounded-full hover:bg-white/10 transition">
+          Ver Inspiración
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SECCIÓN DIFERENCIAL: TU PORTAL PRIVADO (El gancho tecnológico) ===== -->
+  <div class="bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
+      <div class="flex flex-col md:flex-row items-center gap-12">
+        <div class="md:w-1/2">
+          <span class="text-indigo-600 text-xs font-black tracking-[0.3em] uppercase">Exclusivo para nuestros viajeros</span>
+          <h2 class="text-3xl md:text-4xl font-light text-slate-900 mt-3">
+            Tu <span class="font-bold">Portal Privado</span> de Viaje
+          </h2>
+          <p class="text-slate-600 mt-4 text-lg leading-relaxed">
+            Olvídate de PDFs perdidos y cadenas de email interminables. Al confiar en nosotros, recibirás acceso a un espacio digital personal donde consultar tu itinerario día a día, documentos, recomendaciones y un canal directo con tu asesor personal.
+          </p>
+          <ul class="mt-6 space-y-3">
+            <li class="flex items-center gap-3">
+              <span class="w-5 h-5 bg-indigo-100 text-indigo-700 rounded-full flex items-center justify-center text-xs">✓</span>
+              <span class="text-slate-700">Itinerario interactivo y actualizado en tiempo real</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="w-5 h-5 bg-indigo-100 text-indigo-700 rounded-full flex items-center justify-center text-xs">✓</span>
+              <span class="text-slate-700">Acceso a vouchers, billetes y guías descargables</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="w-5 h-5 bg-indigo-100 text-indigo-700 rounded-full flex items-center justify-center text-xs">✓</span>
+              <span class="text-slate-700">Chat privado con tu especialista para cualquier imprevisto</span>
+            </li>
+          </ul>
+          <div class="mt-8">
+            <a href="#" class="inline-block bg-indigo-600 text-white px-6 py-3 text-sm font-bold tracking-wider uppercase rounded-full hover:bg-indigo-700 transition shadow-md">
+              Ver un ejemplo de Portal →
+            </a>
+          </div>
+          <!-- Nota para conectar con tu CRM: Este botón llevaría a una demo o capturaría el lead -->
+        </div>
+        <div class="md:w-1/2 bg-white rounded-2xl shadow-2xl overflow-hidden border border-slate-200">
+          <!-- Mockup visual de tu portal (simulación) -->
+          <div class="bg-slate-800 p-3 flex items-center gap-2">
+            <div class="flex gap-1.5">
+              <span class="w-3 h-3 rounded-full bg-rose-400"></span>
+              <span class="w-3 h-3 rounded-full bg-amber-400"></span>
+              <span class="w-3 h-3 rounded-full bg-emerald-400"></span>
+            </div>
+            <span class="text-slate-300 text-xs ml-2">portal.viajesexclusivos.com/cliente/token-secreto</span>
+          </div>
+          <div class="p-6">
+            <div class="flex justify-between items-center border-b pb-4">
+              <div>
+                <p class="text-xs text-slate-400 uppercase tracking-wider">Bienvenido, Javier</p>
+                <h3 class="font-bold text-lg">Viaje a Japón · Otoño 2025</h3>
+              </div>
+              <span class="bg-emerald-100 text-emerald-700 text-xs px-3 py-1 rounded-full font-bold">Confirmado</span>
+            </div>
+            <!-- Mini timeline del portal -->
+            <div class="mt-4 space-y-3">
+              <div class="flex gap-3">
+                <div class="w-8 h-8 rounded-full bg-indigo-50 text-indigo-700 flex items-center justify-center font-bold text-sm">1</div>
+                <div><p class="font-semibold">Vuelo Privado · Madrid - Tokio</p><p class="text-xs text-slate-500">16 Oct · 09:45</p></div>
+              </div>
+              <div class="flex gap-3">
+                <div class="w-8 h-8 rounded-full bg-indigo-50 text-indigo-700 flex items-center justify-center font-bold text-sm">2</div>
+                <div><p class="font-semibold">Hotel Hoshinoya · 3 noches</p><p class="text-xs text-slate-500">Check-in 16 Oct</p></div>
+              </div>
+              <div class="flex gap-3">
+                <div class="w-8 h-8 rounded-full bg-indigo-50 text-indigo-700 flex items-center justify-center font-bold text-sm">3</div>
+                <div><p class="font-semibold">Cena Kaiseki Privada</p><p class="text-xs text-slate-500">18 Oct · 20:30</p></div>
+              </div>
+            </div>
+            <div class="mt-6 bg-slate-50 p-4 rounded-xl border border-slate-100 flex items-center gap-3">
+              <div class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600">📋</div>
+              <div>
+                <p class="text-sm font-medium">Nota de tu asesora, Clara</p>
+                <p class="text-xs text-slate-500">"He reservado asientos con vistas al Monte Fuji en el tren. ¡Buen viaje!"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== TIPOS DE VIAJE (Inspirado en los filtros de Black Tomato) ===== -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
+    <div class="text-center mb-12">
+      <span class="text-slate-400 text-xs font-black tracking-[0.3em] uppercase">Encuentra tu inspiración</span>
+      <h2 class="text-3xl md:text-4xl font-light text-slate-900 mt-3">¿Qué tipo de experiencia buscas?</h2>
+    </div>
+    
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+      <div class="card-hover bg-white rounded-2xl border border-slate-200 p-6 text-center cursor-pointer group">
+        <div class="w-16 h-16 mx-auto bg-amber-50 text-amber-700 rounded-2xl flex items-center justify-center text-2xl mb-4">🌙</div>
+        <h3 class="font-bold text-lg group-hover:text-indigo-700">Lunas de Miel</h3>
+        <p class="text-xs text-slate-400 mt-1">Escapadas románticas exclusivas</p>
+      </div>
+      <div class="card-hover bg-white rounded-2xl border border-slate-200 p-6 text-center cursor-pointer group">
+        <div class="w-16 h-16 mx-auto bg-emerald-50 text-emerald-700 rounded-2xl flex items-center justify-center text-2xl mb-4">👨👩👧</div>
+        <h3 class="font-bold text-lg group-hover:text-indigo-700">Viajes en Familia</h3>
+        <p class="text-xs text-slate-400 mt-1">Aventuras para todas las edades</p>
+      </div>
+      <div class="card-hover bg-white rounded-2xl border border-slate-200 p-6 text-center cursor-pointer group">
+        <div class="w-16 h-16 mx-auto bg-sky-50 text-sky-700 rounded-2xl flex items-center justify-center text-2xl mb-4">⛷️</div>
+        <h3 class="font-bold text-lg group-hover:text-indigo-700">Aventura & Ski</h3>
+        <p class="text-xs text-slate-400 mt-1">Adrenalina en paisajes únicos</p>
+      </div>
+      <div class="card-hover bg-white rounded-2xl border border-slate-200 p-6 text-center cursor-pointer group">
+        <div class="w-16 h-16 mx-auto bg-purple-50 text-purple-700 rounded-2xl flex items-center justify-center text-2xl mb-4">🧘</div>
+        <h3 class="font-bold text-lg group-hover:text-indigo-700">Slow Travel</h3>
+        <p class="text-xs text-slate-400 mt-1">Desconexión y bienestar</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== DESTINOS POPULARES (Rejilla visual) ===== -->
+  <div class="bg-slate-50 py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-end justify-between mb-10">
+        <div>
+          <span class="text-slate-400 text-xs font-black tracking-[0.3em] uppercase">Destinos favoritos</span>
+          <h2 class="text-3xl md:text-4xl font-light text-slate-900 mt-3">Viaja donde todo es posible</h2>
+        </div>
+        <a href="#" class="text-indigo-600 font-bold text-sm hidden md:block">Ver todos →</a>
+      </div>
+      
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="relative rounded-2xl overflow-hidden h-64 group">
+          <img src="https://images.unsplash.com/photo-1528164344705-47542687000d?q=80&w=2069&auto=format&fit=crop" alt="Japón" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-5">
+            <h3 class="text-white text-xl font-bold">Japón</h3>
+            <p class="text-white/80 text-sm">Templos, onsen y gastronomía</p>
+          </div>
+        </div>
+        <div class="relative rounded-2xl overflow-hidden h-64 group">
+          <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=2073&auto=format&fit=crop" alt="Italia" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-5">
+            <h3 class="text-white text-xl font-bold">Italia</h3>
+            <p class="text-white/80 text-sm">Arte, historia y 'la dolce vita'</p>
+          </div>
+        </div>
+        <div class="relative rounded-2xl overflow-hidden h-64 group">
+          <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=2068&auto=format&fit=crop" alt="Tailandia" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-5">
+            <h3 class="text-white text-xl font-bold">Tailandia</h3>
+            <p class="text-white/80 text-sm">Playas secretas y cultura milenaria</p>
+          </div>
+        </div>
+        <div class="relative rounded-2xl overflow-hidden h-64 group">
+          <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?q=80&w=1932&auto=format&fit=crop" alt="Noruega" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-5">
+            <h3 class="text-white text-xl font-bold">Noruega</h3>
+            <p class="text-white/80 text-sm">Fiordos y auroras boreales</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 5 RAZONES (Replicando "5 reasons to book with us") ===== -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-light text-slate-900">5 razones para viajar con nosotros</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-6 text-center">
+      <div class="p-4">
+        <div class="w-12 h-12 mx-auto bg-indigo-50 text-indigo-700 rounded-full flex items-center justify-center text-xl mb-3">🔐</div>
+        <h4 class="font-bold">Portal Privado</h4>
+        <p class="text-xs text-slate-500 mt-2">Toda la información de tu viaje en un solo lugar, accesible 24/7.</p>
+      </div>
+      <div class="p-4">
+        <div class="w-12 h-12 mx-auto bg-indigo-50 text-indigo-700 rounded-full flex items-center justify-center text-xl mb-3">🤝</div>
+        <h4 class="font-bold">Asesor Personal</h4>
+        <p class="text-xs text-slate-500 mt-2">Un único especialista que te conoce y cuida cada detalle.</p>
+      </div>
+      <div class="p-4">
+        <div class="w-12 h-12 mx-auto bg-indigo-50 text-indigo-700 rounded-full flex items-center justify-center text-xl mb-3">✨</div>
+        <h4 class="font-bold">Experiencias Únicas</h4>
+        <p class="text-xs text-slate-500 mt-2">Acceso a lugares y actividades no disponibles al público general.</p>
+      </div>
+      <div class="p-4">
+        <div class="w-12 h-12 mx-auto bg-indigo-50 text-indigo-700 rounded-full flex items-center justify-center text-xl mb-3">🛡️</div>
+        <h4 class="font-bold">Seguridad Total</h4>
+        <p class="text-xs text-slate-500 mt-2">Asistencia 24h y cobertura ante cualquier imprevisto.</p>
+      </div>
+      <div class="p-4">
+        <div class="w-12 h-12 mx-auto bg-indigo-50 text-indigo-700 rounded-full flex items-center justify-center text-xl mb-3">📋</div>
+        <h4 class="font-bold">Sin Sorpresas</h4>
+        <p class="text-xs text-slate-500 mt-2">Presupuestos cerrados y transparencia absoluta.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CTA FINAL (Get in Touch) ===== -->
+  <div class="bg-slate-900 text-white py-16 md:py-20">
+    <div class="max-w-4xl mx-auto text-center px-4">
+      <span class="text-indigo-300 text-xs font-black tracking-[0.3em] uppercase">Comienza tu viaje</span>
+      <h2 class="text-3xl md:text-5xl font-light mt-4">¿Listo para descubrir <br/>tu próxima historia?</h2>
+      <p class="text-slate-300 mt-4 max-w-2xl mx-auto">
+        Comparte tu sueño de viaje y nuestro equipo diseñará una propuesta personalizada con acceso a tu portal privado.
+      </p>
+      <!-- Este formulario sería el punto de entrada al CRM -->
+      <div class="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
+        <input type="email" placeholder="Tu correo electrónico" class="px-6 py-4 rounded-full text-slate-900 w-full sm:w-80 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
+        <button class="bg-indigo-600 hover:bg-indigo-700 px-8 py-4 rounded-full font-bold text-sm tracking-wider uppercase transition">
+          Solicitar propuesta
+        </button>
+      </div>
+      <p class="text-slate-400 text-xs mt-4">Te responderemos en menos de 24h. Sin spam.</p>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER (Simplificado, con enlaces de interés) ===== -->
+  <footer class="bg-white border-t border-slate-100 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="text-slate-400 text-sm">
+          © 2025 Nombre de tu Agencia. Inspirado en el lujo a medida.
+        </div>
+        <div class="flex gap-6 mt-4 md:mt-0 text-sm text-slate-500">
+          <a href="#" class="hover:text-slate-900">Sobre nosotros</a>
+          <a href="#" class="hover:text-slate-900">Testimonios</a>
+          <a href="#" class="hover:text-slate-900">Prensa</a>
+          <a href="#" class="hover:text-slate-900">Contacto</a>
+          <a href="#" class="hover:text-slate-900">Portal Cliente</a>
+        </div>
+      </div>
+      <div class="mt-8 pt-6 border-t border-slate-100 flex flex-wrap gap-4 justify-center text-xs text-slate-400">
+        <a href="#">Destinos</a>
+        <a href="#">Luna de Miel</a>
+        <a href="#">Familia</a>
+        <a href="#">Aventura</a>
+        <a href="#">Privacidad</a>
+        <a href="#">Condiciones</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Pequeño script para simular interacción (puedes enlazar tu CRM aquí) -->
+  <script>
+    // Simulación de captura de lead: al hacer clic en "Solicitar propuesta" se podría abrir el modal NewContactModal
+    document.querySelectorAll('a[href="#"], button').forEach(el => {
+      el.addEventListener('click', (e) => {
+        if (el.textContent.includes('Solicitar') || el.textContent.includes('propuesta')) {
+          e.preventDefault();
+          alert('✨ ¡Lead capturado! (Aquí se abriría tu modal NewContactModal o se enviaría al CRM)');
+          // En producción: abrir modal o redirigir a /contacto
+        } else if (el.getAttribute('href') === '#') {
+          e.preventDefault();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+Mejoras:
+-responsividad
+-efectos
+-darkmode
+-idiomas
+-formularios y recopilación de información.
+- automatizaciones con n8n y webhooks.
+-OAUTH
+-CONEXIONES A OTRAS PAGINAS DE LA MISMA WEB
+-INTEGRACION CON BOT DE TELEGRAM Y WHATSAPP BUSSINES
+¡Fantástica lista! Has pasado de soñar con la experiencia del cliente a **arquitecturar el ecosistema técnico completo**. Esto ya no es un MVP simple, es la base de un **SaaS vertical para agencias de lujo** serio y escalable.
+
+Voy a desglosar cada punto con un **enfoque pragmático**, priorizando lo que puedes implementar esta semana sin volverte loco.
+
+---
+
+## 1. Responsividad (Ya tienes el 90% hecho)
+
+**Diagnóstico:** Tu código usa Tailwind CSS con clases `md:` y `lg:`. Es responsive por defecto.
+
+**Mejoras específicas para lujo móvil:**
+- **Menú Hamburguesa elegante:** En móvil, el menú de "Destinos | Inspiración" debe colapsar en un `Sheet` (shadcn/ui) que se deslice desde la derecha con opacidad.
+- **Imágenes adaptativas:** Usa el componente `next/image` con `sizes` para no cargar fotos de 4K en un iPhone.
+- **Scroll horizontal suave:** Para las categorías de viaje en móvil, usa `flex overflow-x-auto snap-x snap-mandatory` con `snap-start` en cada tarjeta.
+
+```tsx
+// Ejemplo de menú móvil con Sheet (shadcn)
+import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
+import { Menu } from "lucide-react";
+
+<Sheet>
+  <SheetTrigger className="md:hidden">
+    <Menu className="text-slate-700" />
+  </SheetTrigger>
+  <SheetContent side="right" className="w-[250px] bg-white/95 backdrop-blur">
+    {/* Enlaces de navegación aquí */}
+  </SheetContent>
+</Sheet>
+```
+
+---
+
+## 2. Efectos y Micro-interacciones (La "Magia" del Lujo)
+
+**Recomendación:** **Framer Motion**. Es el estándar en React para animaciones fluidas sin dependencias pesadas.
+
+**Efectos clave para tu web:**
+| Elemento | Efecto Sugerido |
+| :--- | :--- |
+| **Hero** | `whileInView` con opacidad y `y: -20` al hacer scroll. |
+| **Tarjetas de Destino** | `whileHover={{ scale: 1.02, y: -5 }}` con transición `spring`. |
+| **Portal Privado (Mockup)** | Animación de entrada `staggerChildren` para que los días del itinerario aparezcan uno tras otro. |
+| **Cambio de Página** | `AnimatePresence` para transiciones suaves entre rutas en Next.js App Router. |
+
+```bash
+npm install framer-motion
+```
+
+```tsx
+import { motion } from "framer-motion";
+
+<motion.div
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true, margin: "-100px" }}
+  transition={{ duration: 0.6 }}
+>
+  {/* Contenido */}
+</motion.div>
+```
+
+---
+
+## 3. Dark Mode (Elegancia Nocturna)
+
+**Implementación sencilla con Next.js y Tailwind:**
+
+1.  Instala `next-themes`:
+    ```bash
+    npm install next-themes
+    ```
+
+2.  Envuelve tu `layout.tsx` con el provider:
+    ```tsx
+    import { ThemeProvider } from "next-themes";
+
+    export default function RootLayout({ children }) {
+      return (
+        <html lang="es" suppressHydrationWarning>
+          <body>
+            <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+              {children}
+            </ThemeProvider>
+          </body>
+        </html>
+      );
+    }
+    ```
+
+3.  Usa las variantes `dark:` en Tailwind:
+    ```html
+    <div className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white">
+      <!-- Contenido -->
+    </div>
+    ```
+
+4.  **Añade un Toggle elegante:** Un botón con icono de `Sun` / `Moon` que llame a `useTheme().setTheme()`.
+
+**Nota importante:** El mockup del Portal Privado en el HTML anterior debe respetar el dark mode. Usa `dark:bg-slate-800` en lugar de fondos blancos fijos.
+
+---
+
+## 4. Idiomas (i18n) – Llegar a Clientes Internacionales
+
+**Opción recomendada para Next.js App Router:** `next-intl`. Es robusto, soporta Server Components y tiene excelente DX.
+
+**Pasos básicos:**
+1.  Instalación: `npm install next-intl`
+2.  Configuración de `i18n.ts` con tus locales (`es`, `en`).
+3.  Archivos JSON con las traducciones en `/messages`.
+4.  En componentes:
+    ```tsx
+    import { useTranslations } from 'next-intl';
+    const t = useTranslations('HomePage');
+    return <h1>{t('hero.title')}</h1>;
+    ```
+
+**Estrategia de contenido:** Empieza solo con **Inglés** (mercado de lujo internacional) y **Español**. La IA puede ayudarte a traducir los primeros JSON de forma decente.
+
+---
+
+## 5. Formularios y Recopilación de Información (Conexión con tu CRM)
+
+**El formulario de contacto es el punto de entrada a tu `CRMView`.**
+
+**Stack recomendado:**
+- **React Hook Form** + **Zod** (validación).
+- **Sonner** (toast notifications elegantes).
+- **Supabase** (inserción directa en tabla `contacts`).
+
+**Ejemplo de componente de formulario:**
+```tsx
+'use client';
+import { useForm } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { z } from 'zod';
+import { supabase } from '@/lib/supabase';
+import { toast } from 'sonner';
+
+const formSchema = z.object({
+  name: z.string().min(2),
+  email: z.string().email(),
+  travelStyle: z.enum(['honeymoon', 'family', 'adventure']),
+  message: z.string().optional(),
+});
+
+export function LeadForm({ userId }: { userId: string }) {
+  const { register, handleSubmit, formState } = useForm({
+    resolver: zodResolver(formSchema)
+  });
+
+  const onSubmit = async (data) => {
+    const { error } = await supabase.from('contacts').insert({
+      user_id: userId,
+      name: data.name,
+      email: data.email,
+      status: 'Lead Frío',
+      notes: [{ content: `Estilo: ${data.travelStyle}. ${data.message || ''}` }]
+    });
+    if (error) toast.error('Error al enviar');
+    else toast.success('¡Gracias! Tu asesor te contactará en breve.');
+  };
+
+  return (
+    <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+      {/* Inputs con clases de lujo (bordes redondeados, focus:ring-indigo) */}
+    </form>
+  );
+}
+```
+
+**Recopilación Avanzada (Paso a Paso):** En lugar de un formulario gigante, usa un **Stepper** (3 pasos: Datos básicos → Preferencias → Presupuesto). Reduce la fricción y aumenta la tasa de conversión.
+
+---
+
+## 6. Automatizaciones con n8n y Webhooks (El "Cerebro" Oculto)
+
+Aquí es donde tu herramienta se convierte en un **ecosistema inteligente**.
+
+**Flujo propuesto:**
+
+1.  **Disparador:** Un nuevo `contact` es creado en Supabase con `status = 'Lead Frío'`.
+2.  **Webhook en Supabase:** Usa **Database Webhooks** (nativo de Supabase) para enviar una petición POST a tu instancia de **n8n** (self-hosted o cloud).
+3.  **Workflow en n8n:**
+    - Recibe los datos del lead.
+    - **Nodo Supabase:** Busca el email del asesor asignado.
+    - **Nodo Telegram / WhatsApp:** Envía un mensaje al asesor: *"🚀 Nuevo lead: María Pérez quiere luna de miel en Maldivas. Revisa el CRM."*
+    - **Nodo Google Sheets:** (Opcional) Guarda un backup en una hoja de cálculo.
+    - **Nodo HTTP Request:** Llama a tu propio endpoint de Next.js para crear una tarea inicial en el CRM.
+
+**¿Por qué n8n y no solo lógica en Next.js?** Porque las automatizaciones de viajes de lujo cambian constantemente. n8n permite que el **propio asesor** (sin saber programar) modifique el flujo: *"Ahora quiero que cuando un lead escriba 'aniversario' en el mensaje, se envíe un email al hotel automáticamente"*.
+
+**Implementación técnica del Webhook en Supabase:**
+```sql
+-- Habilitar extensión pg_net (si usas self-hosted) o usar Supabase Dashboard -> Database -> Webhooks
+-- Configurar webhook apuntando a https://tu-n8n.com/webhook/lead-creado
+```
+
+---
+
+## 7. OAuth (Login Social para Clientes y Asesores)
+
+**Esto ya lo tienes prácticamente resuelto con Supabase Auth.**
+
+**Para los Asesores (Acceso al CRM):**
+- Habilita **Google OAuth** en Supabase Auth settings.
+- En tu página `/login`, usa `supabase.auth.signInWithOAuth({ provider: 'google' })`.
+- **Row Level Security (RLS):** Asegúrate de que las políticas de `contacts` solo permitan leer/escribir si `auth.uid() = user_id`.
+
+**Para los Clientes (Portal Privado):**
+- **No uses OAuth.** El lujo odia las contraseñas. Usa **Magic Link** o **Token único** (como ya haces en `PortalPage`). Si quieres añadir autenticación para que puedan volver, usa `supabase.auth.signInWithOtp({ email })`. Recibirán un enlace mágico en su correo.
+
+---
+
+## 8. Conexiones a Otras Páginas de la Misma Web (Estructura Next.js)
+
+Con Next.js App Router, esto es trivial. Debes organizar tu carpeta `app/` con la estructura de Black Tomato que listaste.
+
+**Estructura de carpetas sugerida:**
+```
+app/
+├── (marketing)/
+│   ├── page.tsx                (Home)
+│   ├── destinos/
+│   │   ├── page.tsx            (Todos los destinos)
+│   │   └── [slug]/page.tsx     (Japón, Italia...)
+│   ├── estilos/
+│   │   ├── luna-de-miel/
+│   │   │   ├── page.tsx
+│   │   │   └── enero/page.tsx  (Página SEO específica)
+│   │   └── familia/page.tsx
+│   ├── inspiracion/page.tsx
+│   └── contacto/page.tsx
+├── (app)/
+│   ├── dashboard/              (CRMView)
+│   │   └── page.tsx
+│   └── portal/[token]/page.tsx (PortalPage)
+```
+
+**Componente `<Link>` para navegación suave:**
+```tsx
+import Link from 'next/link';
+<Link href="/estilos/luna-de-miel/enero" className="...">
+  Luna de Miel en Enero
+</Link>
+```
+
+---
+
+## 9. Integración con Bot de Telegram y WhatsApp Business
+
+Este es el **canal de comunicación premium** que diferencia a una agencia de lujo.
+
+### A. Bot de Telegram (Para el Asesor - Interno)
+
+**Objetivo:** El asesor recibe alertas y puede responder rápido sin abrir el CRM.
+
+**Implementación:**
+1.  Crea un bot con **@BotFather**.
+2.  Guarda el `TELEGRAM_BOT_TOKEN` en tus variables de entorno.
+3.  Usa la librería `grammy` o `node-telegram-bot-api`.
+4.  **Caso de uso en tu CRM:**
+    - Cuando un cliente ve el portal 3 veces en un día, el webhook de n8n llama a un endpoint que envía un mensaje al chat privado del asesor: *"⚠️ Javier ha abierto el portal 3 veces hoy. Quizá tiene dudas sobre el vuelo."*
+
+```ts
+// Ejemplo mínimo con grammy
+import { Bot } from "grammy";
+const bot = new Bot(process.env.TELEGRAM_BOT_TOKEN!);
+bot.api.sendMessage(CHAT_ID, "Nuevo lead en el CRM");
+```
+
+### B. WhatsApp Business API (Para el Cliente)
+
+**Opciones realistas:**
+| Opción | Coste | Complejidad | Ideal para |
+| :--- | :--- | :--- | :--- |
+| **Meta Cloud API** | ~0.05€/conversación | Alta (verificación de negocio) | Escala y profesionalidad |
+| **Twilio** | Similar | Media | MVP rápido sin verificación de Facebook |
+| **Wassenger / Chat-API** | Bajo (no oficial) | Baja | Pruebas iniciales (riesgo de bloqueo) |
+
+**Flujo de lujo con WhatsApp:**
+1.  Cliente rellena formulario web.
+2.  Webhook de n8n envía un mensaje de **plantilla aprobada** por WhatsApp: *"Estimado [Nombre], soy Clara de [Agencia]. He recibido tu solicitud. ¿Prefieres que te llame mañana a las 10:00 o a las 16:00?"*
+3.  El cliente responde "10:00".
+4.  El CRM de la agencia recibe la respuesta y agenda la tarea.
+
+**Consejo para empezar:** Usa **Twilio** para WhatsApp. Tienen un sandbox gratuito para pruebas. Integrarlo con n8n es directo usando el nodo "Twilio".
+
+---
+
+## Resumen de Prioridades para el Próximo Sprint
+
+| Prioridad | Tarea | Tiempo Estimado |
+| :--- | :--- | :--- |
+| **Alta** | Responsividad fina (Menú móvil, imágenes) | 2h |
+| **Alta** | Formulario de contacto conectado a Supabase | 3h |
+| **Media** | Efectos Framer Motion en secciones clave | 4h |
+| **Media** | Dark Mode con `next-themes` | 1h |
+| **Media** | Estructura de rutas Next.js (SEO) | 4h |
+| **Baja** | n8n Webhook básico (Lead -> Telegram) | 3h |
+| **Baja** | OAuth para Asesores | 1h (configuración) |
+| **Futuro** | i18n y WhatsApp Business API | Sprint dedicado |
+
+**No intentes implementar todo de golpe.** Elige 2-3 mejoras de esta lista que más impacten la percepción de valor de tu SaaS y lánzalas esta semana. El mercado valora más una herramienta **sólida y fiable** que una llena de features a medio cocinar.
+
+Esta es **la pregunta más importante que harás en todo el proyecto**. Y la respuesta, basada en todo lo que hemos hablado y el código que ya tienes, es clara y contundente:
+
+**Cambia a React (Next.js) de forma definitiva. Ahora. Toma el camino serio.**
+
+Déjame justificar por qué **NO TIENE SENTIDO** seguir con HTML estático para el frontend público y por qué el stack **Next.js + TypeScript + SOLID + Tests** es la decisión correcta para tu visión.
+
+### 1. El Problema de Mantener Dos Mundos (HTML Puro vs. React)
+
+Si haces la landing en HTML plano y el CRM/Portal en React, te enfrentarás a esto en 3 meses:
+
+| Tarea Cotidiana | Mundo HTML Puro | Mundo React |
+| :--- | :--- | :--- |
+| **Cambiar el logo o el color corporativo** | Editar 15 archivos `.html` a mano. | Editar 1 componente `Layout` o `globals.css`. |
+| **Añadir una nueva página de destino** (ej: "Luna de Miel en Enero") | Copiar y pegar el header/footer, romper algún estilo, rezar. | Crear `app/estilos/luna-de-miel/enero/page.tsx`, importar `<Layout>`. Listo. |
+| **Formulario de Contacto** | Necesitas un backend aparte o un servicio externo (Formspree). | Conectas directamente a tu **misma API de Supabase** que usa el CRM. |
+| **Reutilizar el componente "Portal Mockup"** en otra página | Imposible sin copiar/pegar código. | `<PortalMockup />`. 5 segundos. |
+| **Activar Analytics (tracking de conversiones)** | Añadir scripts manualmente en cada HTML. | Layout global o `next/script`. Una sola vez. |
+
+**Conclusión:** Mantener el HTML que te pasé es un **MVP para validar el diseño visual**, pero es una **deuda técnica asesina** si planeas escalar a las 40+ páginas de contenido que listaste de Black Tomato.
+
+### 2. ¿Por qué React y no otro Framework (Vue, Svelte, Astro)?
+
+Ya tienes **el 70% del cerebro de la operación programado en React** (`CRMView`, `PortalPage`, `AIModal`). Usar otro framework para la web pública sería un suicidio productivo.
+
+- **Next.js (App Router):** Es el estándar para SaaS. Te da SEO (vital para competir con Black Tomato), Server Components (carga rápida en móviles), y API Routes para conectar con n8n sin montar otro servidor.
+- **React + TypeScript:** El tipado estricto te salvará la vida cuando el proyecto crezca y tengas que refactorizar el `Contact` type.
+
+### 3. ¿Debo aplicar SOLID y TDD (Tests) desde el inicio?
+
+Aquí va una dosis de realismo mezclada con ambición sana:
+
+- **SÍ a SOLID en la lógica de negocio.** Especialmente la **S (Single Responsibility)** y la **D (Dependency Inversion)** .
+    - *Ejemplo:* Tu `CRMView` actual está bien, pero el `handleBulkDelete` y la lógica de `PapaParse` deberían estar en un **Custom Hook** (`useContacts`) o un **Servicio** (`contactService.ts`). Esto es **SOLID** y facilita el testing.
+- **SÍ a los Tests de Integración (CRUD).** El 80% de los bugs en un SaaS vienen de: *"El formulario guardó mal el estado"* o *"El webhook no se disparó"*.
+    - **Testing Library + Vitest:** Escribe 1 test para el flujo crítico: *Usuario rellena formulario -> Se crea lead en Supabase -> Se muestra en la tabla*. Ese test es tu red de seguridad.
+- **NO te obsesiones con 100% de cobertura en la UI.** Los tests de renderizado de píxeles son frágiles. Testea **comportamiento**, no CSS.
+
+### 4. Plan de Migración del HTML a Next.js (En una tarde)
+
+No tires el HTML. Úsalo como **guía de estilos viva**. Así lo migras:
+
+1.  **Crea el Layout Base:**
+    ```tsx
+    // app/layout.tsx
+    import { Inter } from 'next/font/google';
+    import './globals.css';
+    
+    export default function RootLayout({ children }) {
+      return (
+        <html lang="es">
+          <body className={`${inter.variable} bg-white dark:bg-slate-900`}>
+            <Navbar /> {/* Copia el HTML del menú aquí */}
+            {children}
+            <Footer /> {/* Copia el HTML del footer aquí */}
+          </body>
+        </html>
+      );
+    }
+    ```
+2.  **Crea Componentes Reutilizables:**
+    - `components/Hero.tsx`: Copia el `<div class="hero-pattern...">` y conviértelo en un componente que reciba `title` y `imageUrl` por props.
+    - `components/PortalMockup.tsx`: Extrae la sección entera del portal. Esa sección la vas a reutilizar en la página de "Cómo Funciona" y en el email de bienvenida.
+3.  **La Página de Inicio (`app/page.tsx`):**
+    - Simplemente importa y ensambla: `<Hero />`, `<PortalMockup />`, `<TravelTypesGrid />`, `<DestinationGrid />`.
+4.  **Conecta el Formulario de Contacto:**
+    - Usa **Server Actions** (lo más moderno de Next.js 14) o una API Route para insertar en Supabase. **Ese es el puente mágico entre la Web Pública y tu CRM.**
+
+### 5. Estructura de Proyecto "Serio" que Recomiendo
+
+```
+/
+├── app/                     # Next.js App Router (Rutas y Layouts)
+│   ├── (marketing)/         # Web Pública
+│   ├── (app)/               # CRM (Protegido por autenticación)
+│   └── api/                 # Webhooks para n8n y WhatsApp
+├── components/
+│   ├── ui/                  # Botones, Modales, Dropdowns (Shadcn/ui)
+│   ├── marketing/           # Hero, Tarjetas de Destino, Portal Mockup
+│   └── crm/                 # Tabla de Leads, StatusDropdown, AIModal
+├── lib/
+│   ├── supabase/            # Cliente y tipos de Supabase
+│   ├── services/            # contactService.ts (Lógica de CRUD - **SOLID**)
+│   └── utils.ts
+├── hooks/                   # useContacts, usePortals, useAuth
+└── __tests__/               # Tests de integración (CRUD de leads)
+```
+
+### Conclusión y Próximo Paso Inmediato
+
+**La decisión está tomada: Nos pasamos a Next.js de forma definitiva.**
+
+El HTML que te di fue un **prototipo de diseño de alta fidelidad**. Ahora lo usaremos como **mockup de referencia** para construir los componentes de React.
+
+**Tu primera tarea en este nuevo camino serio:**
+1.  Inicializa un proyecto Next.js con TypeScript (`npx create-next-app@latest`).
+2.  Instala Shadcn/ui (`npx shadcn-ui@latest init`).
+3.  Copia el `<div>` del **Portal Mockup** del HTML y pégalo en un nuevo archivo `components/marketing/PortalMockup.tsx`.
+4.  Cámbiale los `class` por `className` y las rutas de las imágenes.
+
+Ese pequeño paso te llevará de "tengo un HTML" a "estoy construyendo un SaaS profesional".
+
+
+
+¡Me alegra que **SunnyFace** resuene contigo! Y tienes toda la razón: en fase MVP, el nombre es un **placeholder emocional**. Lo importante es que a ti te motive para construir. Si dentro de 6 meses una agencia de lujo te dice *"Suena a app de filtros de Instagram"*, lo cambias en una tarde (redirect 301 y listo). Lo que no se cambia en una tarde es un **CRM que funciona**.
+
+Ahora que hemos bautizado al proyecto y decidido el camino serio, vamos a **aterrizar el despegue técnico**.
+
+### Plan de Acción Inmediato: De HTML a Next.js en 3 Pasos
+
+No te abrumes. Vamos a hacer la transición más suave posible.
+
+#### Paso 1: Inicialización del Proyecto (5 minutos)
+
+Abre tu terminal y ejecuta esto. Vamos a usar la configuración más moderna y ligera.
+
+```bash
+npx create-next-app@latest sunnyface --typescript --tailwind --eslint --app --src-dir --import-alias "@/*"
+cd sunnyface
+npm install lucide-react # Tus iconos ya usan esto
+npm install @supabase/supabase-js # Ya lo tienes en el CRM
+```
+
+#### Paso 2: Copiar el HTML a Componentes React (30 minutos)
+
+No reescribas. **Traslada**.
+
+1.  Crea `src/components/layout/Navbar.tsx`.
+2.  Abre el `index.html` que te pasé.
+3.  Copia el `<div class="border-b...">` del menú.
+4.  Pégalo dentro de `return ( <> ... </> )`.
+5.  Cambia `class` por `className` y `for` por `htmlFor`.
+6.  Cambia `<img src="...">` por `<Image src="..." width="..." height="..." alt="..." />` de `next/image`.
+7.  **Repite para:** `Footer.tsx`, `Hero.tsx`, `PortalMockup.tsx`, `TravelTypesGrid.tsx`.
+
+#### Paso 3: Crear la Página de Inicio (`src/app/page.tsx`)
+
+```tsx
+import Hero from '@/components/marketing/Hero';
+import PortalMockup from '@/components/marketing/PortalMockup';
+import TravelTypesGrid from '@/components/marketing/TravelTypesGrid';
+// ... resto de imports
+
+export default function Home() {
+  return (
+    <main className="min-h-screen">
+      <Hero />
+      <PortalMockup />
+      <TravelTypesGrid />
+      {/* ... */}
+    </main>
+  );
+}
+```
+
+Al final de este proceso, si abres `http://localhost:3000`, verás **EXACTAMENTE el mismo diseño** que en el HTML plano, pero ahora tienes un sistema de componentes que te permitirá añadir la página de "Luna de Miel en Enero" en 2 minutos.
+
+### El "Momento de la Verdad": Conectar el Formulario al CRM
+
+Una vez tengas el esqueleto visual, el hito que convierte tu web en un **SaaS** es este:
+
+1.  El formulario de "Solicitar Propuesta" envía datos a una **Server Action** (`app/actions/leadActions.ts`).
+2.  La Server Action inserta en la tabla `contacts` de Supabase.
+3.  El `CRMView` (que ya tienes programado) **muestra el lead al instante**.
+
+**Código de ejemplo para la magia (Server Action):**
+```ts
+// app/actions/leadActions.ts
+'use server';
+
+import { createClient } from '@/lib/supabase/server';
+import { revalidatePath } from 'next/cache';
+
+export async function createLead(formData: FormData) {
+  const supabase = createClient();
+  
+  const { error } = await supabase.from('contacts').insert({
+    name: formData.get('name'),
+    email: formData.get('email'),
+    status: 'Lead Frío',
+    user_id: process.env.DEFAULT_AGENT_ID! // O el ID del usuario logueado
+  });
+
+  if (error) return { success: false, error: error.message };
+  
+  revalidatePath('/dashboard'); // Actualiza el CRM si está abierto
+  return { success: true };
+}
+```
+
+
+
+
+
+
+---------------------
+
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxury Travel | Viajes a Medida con Portal Privado</title>
+  <!-- Tailwind via CDN (ideal para MVP rápido) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Fuente elegante -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .hero-pattern {
+      background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=2074&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center 30%;
+    }
+    .card-hover {
+      transition: all 0.3s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.05), 0 8px 10px -6px rgb(0 0 0 / 0.02);
+    }
+  </style>
+</head>
+<body class="bg-white text-slate-800 antialiased">
+
+  <!-- ===== TOP BAR (Estilo Black Tomato: minimalista) ===== -->
+  <div class="border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
+      <div class="flex items-center space-x-6 text-xs font-semibold tracking-wider text-slate-500">
+        <a href="#" class="hover:text-slate-900 transition">DESTINOS</a>
+        <a href="#" class="hover:text-slate-900 transition">INSPIRACIÓN</a>
+        <a href="#" class="hover:text-slate-900 transition">ESTILOS DE VIAJE</a>
+        <a href="#" class="hover:text-slate-900 transition">CÓMO FUNCIONA</a>
+      </div>
+      <div>
+        <a href="#" class="bg-slate-900 text-white px-5 py-2 text-xs font-bold tracking-widest uppercase rounded-full hover:bg-slate-800 transition shadow-sm">
+          Solicitar Propuesta
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== HERO (Aspiracional, tipo "Pursuit of Feeling") ===== -->
+  <div class="hero-pattern relative">
+    <div class="absolute inset-0 bg-black/30"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 flex flex-col items-start">
+      <span class="text-white/80 text-xs font-black tracking-[0.3em] uppercase mb-4">Pursuit of Feeling</span>
+      <h1 class="text-4xl md:text-6xl font-light text-white max-w-3xl leading-tight">
+        Viajes que despiertan <br/>
+        <span class="font-bold">los sentidos</span>
+      </h1>
+      <p class="text-white/90 text-lg md:text-xl mt-6 max-w-xl font-light">
+        Diseñamos experiencias a medida donde cada detalle está cuidado. Y ahora, con tu propio portal privado de viaje.
+      </p>
+      <div class="mt-8 flex gap-4">
+        <a href="#" class="bg-white text-slate-900 px-8 py-4 text-sm font-bold tracking-wider uppercase rounded-full hover:bg-slate-100 transition shadow-lg">
+          Descubre Destinos
+        </a>
+        <a href="#" class="border border-white text-white px-8 py-4 text-sm font-bold tracking-wider uppercase rounded-full hover:bg-white/10 transition">
+          Ver Inspiración
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SECCIÓN DIFERENCIAL: TU PORTAL PRIVADO (El gancho tecnológico) ===== -->
+  <div class="bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
+      <div class="flex flex-col md:flex-row items-center gap-12">
+        <div class="md:w-1/2">
+          <span class="text-indigo-600 text-xs font-black tracking-[0.3em] uppercase">Exclusivo para nuestros viajeros</span>
+          <h2 class="text-3xl md:text-4xl font-light text-slate-900 mt-3">
+            Tu <span class="font-bold">Portal Privado</span> de Viaje
+          </h2>
+          <p class="text-slate-600 mt-4 text-lg leading-relaxed">
+            Olvídate de PDFs perdidos y cadenas de email interminables. Al confiar en nosotros, recibirás acceso a un espacio digital personal donde consultar tu itinerario día a día, documentos, recomendaciones y un canal directo con tu asesor personal.
+          </p>
+          <ul class="mt-6 space-y-3">
+            <li class="flex items-center gap-3">
+              <span class="w-5 h-5 bg-indigo-100 text-indigo-700 rounded-full flex items-center justify-center text-xs">✓</span>
+              <span class="text-slate-700">Itinerario interactivo y actualizado en tiempo real</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="w-5 h-5 bg-indigo-100 text-indigo-700 rounded-full flex items-center justify-center text-xs">✓</span>
+              <span class="text-slate-700">Acceso a vouchers, billetes y guías descargables</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="w-5 h-5 bg-indigo-100 text-indigo-700 rounded-full flex items-center justify-center text-xs">✓</span>
+              <span class="text-slate-700">Chat privado con tu especialista para cualquier imprevisto</span>
+            </li>
+          </ul>
+          <div class="mt-8">
+            <a href="#" class="inline-block bg-indigo-600 text-white px-6 py-3 text-sm font-bold tracking-wider uppercase rounded-full hover:bg-indigo-700 transition shadow-md">
+              Ver un ejemplo de Portal →
+            </a>
+          </div>
+          <!-- Nota para conectar con tu CRM: Este botón llevaría a una demo o capturaría el lead -->
+        </div>
+        <div class="md:w-1/2 bg-white rounded-2xl shadow-2xl overflow-hidden border border-slate-200">
+          <!-- Mockup visual de tu portal (simulación) -->
+          <div class="bg-slate-800 p-3 flex items-center gap-2">
+            <div class="flex gap-1.5">
+              <span class="w-3 h-3 rounded-full bg-rose-400"></span>
+              <span class="w-3 h-3 rounded-full bg-amber-400"></span>
+              <span class="w-3 h-3 rounded-full bg-emerald-400"></span>
+            </div>
+            <span class="text-slate-300 text-xs ml-2">portal.viajesexclusivos.com/cliente/token-secreto</span>
+          </div>
+          <div class="p-6">
+            <div class="flex justify-between items-center border-b pb-4">
+              <div>
+                <p class="text-xs text-slate-400 uppercase tracking-wider">Bienvenido, Javier</p>
+                <h3 class="font-bold text-lg">Viaje a Japón · Otoño 2025</h3>
+              </div>
+              <span class="bg-emerald-100 text-emerald-700 text-xs px-3 py-1 rounded-full font-bold">Confirmado</span>
+            </div>
+            <!-- Mini timeline del portal -->
+            <div class="mt-4 space-y-3">
+              <div class="flex gap-3">
+                <div class="w-8 h-8 rounded-full bg-indigo-50 text-indigo-700 flex items-center justify-center font-bold text-sm">1</div>
+                <div><p class="font-semibold">Vuelo Privado · Madrid - Tokio</p><p class="text-xs text-slate-500">16 Oct · 09:45</p></div>
+              </div>
+              <div class="flex gap-3">
+                <div class="w-8 h-8 rounded-full bg-indigo-50 text-indigo-700 flex items-center justify-center font-bold text-sm">2</div>
+                <div><p class="font-semibold">Hotel Hoshinoya · 3 noches</p><p class="text-xs text-slate-500">Check-in 16 Oct</p></div>
+              </div>
+              <div class="flex gap-3">
+                <div class="w-8 h-8 rounded-full bg-indigo-50 text-indigo-700 flex items-center justify-center font-bold text-sm">3</div>
+                <div><p class="font-semibold">Cena Kaiseki Privada</p><p class="text-xs text-slate-500">18 Oct · 20:30</p></div>
+              </div>
+            </div>
+            <div class="mt-6 bg-slate-50 p-4 rounded-xl border border-slate-100 flex items-center gap-3">
+              <div class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600">📋</div>
+              <div>
+                <p class="text-sm font-medium">Nota de tu asesora, Clara</p>
+                <p class="text-xs text-slate-500">"He reservado asientos con vistas al Monte Fuji en el tren. ¡Buen viaje!"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== TIPOS DE VIAJE (Inspirado en los filtros de Black Tomato) ===== -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
+    <div class="text-center mb-12">
+      <span class="text-slate-400 text-xs font-black tracking-[0.3em] uppercase">Encuentra tu inspiración</span>
+      <h2 class="text-3xl md:text-4xl font-light text-slate-900 mt-3">¿Qué tipo de experiencia buscas?</h2>
+    </div>
+    
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+      <div class="card-hover bg-white rounded-2xl border border-slate-200 p-6 text-center cursor-pointer group">
+        <div class="w-16 h-16 mx-auto bg-amber-50 text-amber-700 rounded-2xl flex items-center justify-center text-2xl mb-4">🌙</div>
+        <h3 class="font-bold text-lg group-hover:text-indigo-700">Lunas de Miel</h3>
+        <p class="text-xs text-slate-400 mt-1">Escapadas románticas exclusivas</p>
+      </div>
+      <div class="card-hover bg-white rounded-2xl border border-slate-200 p-6 text-center cursor-pointer group">
+        <div class="w-16 h-16 mx-auto bg-emerald-50 text-emerald-700 rounded-2xl flex items-center justify-center text-2xl mb-4">👨‍👩‍👧</div>
+        <h3 class="font-bold text-lg group-hover:text-indigo-700">Viajes en Familia</h3>
+        <p class="text-xs text-slate-400 mt-1">Aventuras para todas las edades</p>
+      </div>
+      <div class="card-hover bg-white rounded-2xl border border-slate-200 p-6 text-center cursor-pointer group">
+        <div class="w-16 h-16 mx-auto bg-sky-50 text-sky-700 rounded-2xl flex items-center justify-center text-2xl mb-4">⛷️</div>
+        <h3 class="font-bold text-lg group-hover:text-indigo-700">Aventura & Ski</h3>
+        <p class="text-xs text-slate-400 mt-1">Adrenalina en paisajes únicos</p>
+      </div>
+      <div class="card-hover bg-white rounded-2xl border border-slate-200 p-6 text-center cursor-pointer group">
+        <div class="w-16 h-16 mx-auto bg-purple-50 text-purple-700 rounded-2xl flex items-center justify-center text-2xl mb-4">🧘</div>
+        <h3 class="font-bold text-lg group-hover:text-indigo-700">Slow Travel</h3>
+        <p class="text-xs text-slate-400 mt-1">Desconexión y bienestar</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== DESTINOS POPULARES (Rejilla visual) ===== -->
+  <div class="bg-slate-50 py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-end justify-between mb-10">
+        <div>
+          <span class="text-slate-400 text-xs font-black tracking-[0.3em] uppercase">Destinos favoritos</span>
+          <h2 class="text-3xl md:text-4xl font-light text-slate-900 mt-3">Viaja donde todo es posible</h2>
+        </div>
+        <a href="#" class="text-indigo-600 font-bold text-sm hidden md:block">Ver todos →</a>
+      </div>
+      
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="relative rounded-2xl overflow-hidden h-64 group">
+          <img src="https://images.unsplash.com/photo-1528164344705-47542687000d?q=80&w=2069&auto=format&fit=crop" alt="Japón" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-5">
+            <h3 class="text-white text-xl font-bold">Japón</h3>
+            <p class="text-white/80 text-sm">Templos, onsen y gastronomía</p>
+          </div>
+        </div>
+        <div class="relative rounded-2xl overflow-hidden h-64 group">
+          <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=2073&auto=format&fit=crop" alt="Italia" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-5">
+            <h3 class="text-white text-xl font-bold">Italia</h3>
+            <p class="text-white/80 text-sm">Arte, historia y 'la dolce vita'</p>
+          </div>
+        </div>
+        <div class="relative rounded-2xl overflow-hidden h-64 group">
+          <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=2068&auto=format&fit=crop" alt="Tailandia" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-5">
+            <h3 class="text-white text-xl font-bold">Tailandia</h3>
+            <p class="text-white/80 text-sm">Playas secretas y cultura milenaria</p>
+          </div>
+        </div>
+        <div class="relative rounded-2xl overflow-hidden h-64 group">
+          <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?q=80&w=1932&auto=format&fit=crop" alt="Noruega" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-5">
+            <h3 class="text-white text-xl font-bold">Noruega</h3>
+            <p class="text-white/80 text-sm">Fiordos y auroras boreales</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 5 RAZONES (Replicando "5 reasons to book with us") ===== -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-light text-slate-900">5 razones para viajar con nosotros</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-6 text-center">
+      <div class="p-4">
+        <div class="w-12 h-12 mx-auto bg-indigo-50 text-indigo-700 rounded-full flex items-center justify-center text-xl mb-3">🔐</div>
+        <h4 class="font-bold">Portal Privado</h4>
+        <p class="text-xs text-slate-500 mt-2">Toda la información de tu viaje en un solo lugar, accesible 24/7.</p>
+      </div>
+      <div class="p-4">
+        <div class="w-12 h-12 mx-auto bg-indigo-50 text-indigo-700 rounded-full flex items-center justify-center text-xl mb-3">🤝</div>
+        <h4 class="font-bold">Asesor Personal</h4>
+        <p class="text-xs text-slate-500 mt-2">Un único especialista que te conoce y cuida cada detalle.</p>
+      </div>
+      <div class="p-4">
+        <div class="w-12 h-12 mx-auto bg-indigo-50 text-indigo-700 rounded-full flex items-center justify-center text-xl mb-3">✨</div>
+        <h4 class="font-bold">Experiencias Únicas</h4>
+        <p class="text-xs text-slate-500 mt-2">Acceso a lugares y actividades no disponibles al público general.</p>
+      </div>
+      <div class="p-4">
+        <div class="w-12 h-12 mx-auto bg-indigo-50 text-indigo-700 rounded-full flex items-center justify-center text-xl mb-3">🛡️</div>
+        <h4 class="font-bold">Seguridad Total</h4>
+        <p class="text-xs text-slate-500 mt-2">Asistencia 24h y cobertura ante cualquier imprevisto.</p>
+      </div>
+      <div class="p-4">
+        <div class="w-12 h-12 mx-auto bg-indigo-50 text-indigo-700 rounded-full flex items-center justify-center text-xl mb-3">📋</div>
+        <h4 class="font-bold">Sin Sorpresas</h4>
+        <p class="text-xs text-slate-500 mt-2">Presupuestos cerrados y transparencia absoluta.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CTA FINAL (Get in Touch) ===== -->
+  <div class="bg-slate-900 text-white py-16 md:py-20">
+    <div class="max-w-4xl mx-auto text-center px-4">
+      <span class="text-indigo-300 text-xs font-black tracking-[0.3em] uppercase">Comienza tu viaje</span>
+      <h2 class="text-3xl md:text-5xl font-light mt-4">¿Listo para descubrir <br/>tu próxima historia?</h2>
+      <p class="text-slate-300 mt-4 max-w-2xl mx-auto">
+        Comparte tu sueño de viaje y nuestro equipo diseñará una propuesta personalizada con acceso a tu portal privado.
+      </p>
+      <!-- Este formulario sería el punto de entrada al CRM -->
+      <div class="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
+        <input type="email" placeholder="Tu correo electrónico" class="px-6 py-4 rounded-full text-slate-900 w-full sm:w-80 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
+        <button class="bg-indigo-600 hover:bg-indigo-700 px-8 py-4 rounded-full font-bold text-sm tracking-wider uppercase transition">
+          Solicitar propuesta
+        </button>
+      </div>
+      <p class="text-slate-400 text-xs mt-4">Te responderemos en menos de 24h. Sin spam.</p>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER (Simplificado, con enlaces de interés) ===== -->
+  <footer class="bg-white border-t border-slate-100 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="text-slate-400 text-sm">
+          © 2025 Nombre de tu Agencia. Inspirado en el lujo a medida.
+        </div>
+        <div class="flex gap-6 mt-4 md:mt-0 text-sm text-slate-500">
+          <a href="#" class="hover:text-slate-900">Sobre nosotros</a>
+          <a href="#" class="hover:text-slate-900">Testimonios</a>
+          <a href="#" class="hover:text-slate-900">Prensa</a>
+          <a href="#" class="hover:text-slate-900">Contacto</a>
+          <a href="#" class="hover:text-slate-900">Portal Cliente</a>
+        </div>
+      </div>
+      <div class="mt-8 pt-6 border-t border-slate-100 flex flex-wrap gap-4 justify-center text-xs text-slate-400">
+        <a href="#">Destinos</a>
+        <a href="#">Luna de Miel</a>
+        <a href="#">Familia</a>
+        <a href="#">Aventura</a>
+        <a href="#">Privacidad</a>
+        <a href="#">Condiciones</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Pequeño script para simular interacción (puedes enlazar tu CRM aquí) -->
+  <script>
+    // Simulación de captura de lead: al hacer clic en "Solicitar propuesta" se podría abrir el modal NewContactModal
+    document.querySelectorAll('a[href="#"], button').forEach(el => {
+      el.addEventListener('click', (e) => {
+        if (el.textContent.includes('Solicitar') || el.textContent.includes('propuesta')) {
+          e.preventDefault();
+          alert('✨ ¡Lead capturado! (Aquí se abriría tu modal NewContactModal o se enviaría al CRM)');
+          // En producción: abrir modal o redirigir a /contacto
+        } else if (el.getAttribute('href') === '#') {
+          e.preventDefault();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+

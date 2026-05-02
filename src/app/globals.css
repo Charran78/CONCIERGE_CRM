@@ -1,0 +1,248 @@
+/* ============================================================
+   THE SINGULAR CHOICE — Luxury Concierge CRM
+   Design System: Deep Black + Champagne Gold
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+/* ── Design Tokens ─────────────────────────────────────────── */
+:root {
+  /* Core palette */
+  --tsc-black:        #07070A;
+  --tsc-deep:         #0D0D12;
+  --tsc-surface:      #12121A;
+  --tsc-border:       #1E1E2A;
+  --tsc-border-light: #252535;
+
+  /* Gold accent */
+  --tsc-gold:         #C9A96E;
+  --tsc-gold-light:   #E2C992;
+  --tsc-gold-dark:    #9B7A46;
+  --tsc-gold-muted:   rgba(201,169,110,0.15);
+
+  /* Text */
+  --tsc-text-primary:   #F5F0E8;
+  --tsc-text-secondary: #A89880;
+  --tsc-text-muted:     #5C5448;
+
+  /* Status colors (muted for luxury feel) */
+  --tsc-emerald:   #3D7D6B;
+  --tsc-amber:     #9B7A46;
+  --tsc-rose:      #8B4A52;
+  --tsc-indigo:    #4A5580;
+
+  /* Backgrounds */
+  --background: var(--tsc-black);
+  --foreground: var(--tsc-text-primary);
+}
+
+/* ── Reset & Base ──────────────────────────────────────────── */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background: var(--tsc-black);
+  color: var(--tsc-text-primary);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings use Playfair Display */
+h1, h2, .font-serif {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* ── Luxury Scrollbar ──────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--tsc-gold-dark);
+  border-radius: 99px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--tsc-gold);
+}
+
+/* ── Animations ────────────────────────────────────────────── */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes zoomIn {
+  from { opacity: 0; transform: scale(0.97); }
+  to   { opacity: 1; transform: scale(1); }
+}
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position:  200% 0; }
+}
+@keyframes goldPulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.6; }
+}
+@keyframes revealText {
+  from { clip-path: inset(0 100% 0 0); }
+  to   { clip-path: inset(0 0% 0 0); }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-6px); }
+}
+
+.animate-fade-in   { animation: fadeIn   0.4s ease both; }
+.animate-zoom-in   { animation: zoomIn   0.3s ease both; }
+.animate-slide-up  { animation: slideUp  0.5s ease both; }
+.animate-float     { animation: float    4s ease-in-out infinite; }
+.animate-gold-pulse{ animation: goldPulse 2s ease-in-out infinite; }
+
+/* Stagger children */
+.stagger > *:nth-child(1) { animation-delay: 0.05s; }
+.stagger > *:nth-child(2) { animation-delay: 0.1s;  }
+.stagger > *:nth-child(3) { animation-delay: 0.15s; }
+.stagger > *:nth-child(4) { animation-delay: 0.2s;  }
+.stagger > *:nth-child(5) { animation-delay: 0.25s; }
+
+/* ── Luxury UI Components ─────────────────────────────────── */
+
+/* Gold divider */
+.divider-gold {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--tsc-gold-dark), transparent);
+}
+
+/* Shimmer skeleton loading */
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--tsc-surface) 25%,
+    var(--tsc-border) 50%,
+    var(--tsc-surface) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 8px;
+}
+
+/* Glass card */
+.glass-card {
+  background: rgba(18,18,26,0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--tsc-border);
+  border-radius: 16px;
+}
+
+/* Gold badge */
+.badge-gold {
+  background: var(--tsc-gold-muted);
+  border: 1px solid rgba(201,169,110,0.3);
+  color: var(--tsc-gold-light);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 99px;
+}
+
+/* Luxury button */
+.btn-gold {
+  background: linear-gradient(135deg, var(--tsc-gold-dark), var(--tsc-gold), var(--tsc-gold-dark));
+  background-size: 200% 100%;
+  color: #07070A;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 11px;
+  border-radius: 99px;
+  padding: 12px 28px;
+  transition: background-position 0.4s ease, transform 0.15s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 20px rgba(201,169,110,0.25);
+}
+.btn-gold:hover {
+  background-position: 100% 0;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 30px rgba(201,169,110,0.4);
+}
+.btn-gold:active {
+  transform: scale(0.97);
+}
+
+/* Ghost button */
+.btn-ghost {
+  background: transparent;
+  border: 1px solid var(--tsc-border);
+  color: var(--tsc-text-secondary);
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  border-radius: 99px;
+  padding: 10px 24px;
+  transition: border-color 0.2s, color 0.2s;
+}
+.btn-ghost:hover {
+  border-color: var(--tsc-gold-dark);
+  color: var(--tsc-gold-light);
+}
+
+/* Input luxury */
+.input-luxury {
+  background: var(--tsc-surface);
+  border: 1px solid var(--tsc-border);
+  color: var(--tsc-text-primary);
+  border-radius: 12px;
+  padding: 12px 16px;
+  font-size: 14px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+  width: 100%;
+}
+.input-luxury::placeholder { color: var(--tsc-text-muted); }
+.input-luxury:focus {
+  border-color: var(--tsc-gold-dark);
+  box-shadow: 0 0 0 3px rgba(201,169,110,0.1);
+}
+
+/* Status pill */
+.status-lead     { background: rgba(74,85,128,0.2);  color: #8492C4; border: 1px solid rgba(74,85,128,0.3); }
+.status-llamada  { background: rgba(155,122,70,0.2); color: #C9A96E; border: 1px solid rgba(155,122,70,0.3); }
+.status-potencial{ background: rgba(61,125,107,0.2); color: #5CBFA4; border: 1px solid rgba(61,125,107,0.3); }
+.status-activo   { background: rgba(201,169,110,0.15);color: #E2C992; border: 1px solid rgba(201,169,110,0.3); }
+
+/* TSC Section label */
+.section-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--tsc-gold);
+}
+
+/* Luxury timeline line */
+.timeline-line {
+  width: 1px;
+  background: linear-gradient(to bottom, var(--tsc-gold-dark), transparent);
+}
+
+/* Sidebar nav active glow */
+.nav-active {
+  background: var(--tsc-gold-muted);
+  border: 1px solid rgba(201,169,110,0.2);
+  color: var(--tsc-gold-light);
+}
